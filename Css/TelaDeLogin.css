@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body {
+    background:linear-gradient(#004C99,#03315f);
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main h1 {
+    color: #ffffffda;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    
+}
+
+main h1::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 200px;
+    bottom: 5px;
+    left: 0;
+    border-radius: 8px;
+    background:linear-gradient(#F6BE00,#daa703);
+}
+
+main.social-media {
+    display: flex;
+    align-content: center;
+}
+
+main .social-media a {
+    text-decoration: none;
+}
+
+main .social-media img {
+    width: 36px;
+    margin-left: 3rem;
+}
+
+main .social-media a:first-child img {
+    margin-left: 0;
+}
+
+main .alternative {
+    margin-top: 1rem;
+    box-shadow: 0px 10px 10px -12px #f6bd00a8;
+}
+
+main .alternative span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #f6bd008e;
+    position: relative;
+
+}
+
+main .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100px;
+    bottom: 50%;
+    right: 70px;
+    background: #f6bd008e;
+
+}
+
+main .alternative span::after {
+    left: 70px;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label {
+    display: flex;
+    flex-direction: column;
+}
+
+main form label span {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+main form input {
+    background: #03315f;
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: none;
+    color: rgba(166, 166, 166);
+    font-size: 1rem;
+    border: 1px solid #044381;
+    border-radius: 8px;
+}
+
+main form input:hover{
+    background-color: #00264d;
+    box-shadow: 0px 10px 40px -12px #f6bd00a8;
+}
+
+main form input[type="submit"] {
+   
+    cursor: pointer;
+    width: 80%;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 32px;
+    background: linear-gradient(to left, #F6BE00,#004C99);
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 40px -12px #f6bd0067;
+}
+
+main form input[type="submit"]:hover {
+    background: linear-gradient(to right, #F6BE00,#004C99);
+    letter-spacing: 0.5px;
+}
+
+
+section.images {
+    width: 40vw;
+    display: flex;
+    justify-content: flex-end;
+    padding: 4rem;
+    flex-direction: column;
+}
+
+section.images img {
+    width: 100%;
+}
+
+.logo{
+    height: 45px;
+    width: 167px;
+    margin-top: 4px;
+    padding: 20px 50px;
+    z-index: 10;
+    position: relative;
+}
+
+.Titulo{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: right;
+    height: 120px;
+    background-image: linear-gradient(to bottom, #0a74df, #F6BE00, #F6BE00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+section.images .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #F6BE00, #004C99);
+    clip-path: circle(40% at right 80%);
+    z-index: -1;
+}
+
+.support{
+    color:#ffffffda;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 45px;
+}
+
+.support > a{
+    color:#ffffffda
+}
+
+.support > a:hover{
+    color:#F6BE00;
+}
+
+.help{
+    align-items: left;
+    margin-top: 8px;
+    margin-right: 140px;
+    display: flex;
+ 
+}
+
+.help > a{
+    text-decoration: none;
+    color: #737373;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+.error{
+    font-size: 1px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 80%);
+    }
+
+    .Titulo{
+        font-size: 3rem;
+        height: 130px;
+    
+    
+    }
+}
+
+@media only screen and (min-width: 1429px) and (max-width: 1527px) {
+
+    .Titulo{
+        font-size: 3rem;
+        height: 160px;
+    
+    
+    }
+}
+
+@media only screen and (max-width: 1427px) {
+
+    .Titulo{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    section.images{
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .logo{
+        display: none;
+        visibility: hidden;
+    }
+
+    main h1::before{
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 200px;
+        bottom: 2px;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 899px) and (min-width: 450px){
+    main h1::before{
+        content: '';
+        position: absolute;
+        height: 4px;
+        width: 200px;
+        bottom: 2px;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main h1::before{
+        content: '';
+        width: 134px;
+     
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,105 @@
+.movie {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 20%;
+      width: 50%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 50%;
+    }
+  }
+
+.ball span:nth-child(1) {
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -520px;
+    margin-top: -200px;
+    background-color: #15c5fad0;
+    border: 2px solid #15c5fad0;
+    animation: bounce 20s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(95px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+.ball span:nth-child(2) {
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -520px;
+    margin-top: -400px;
+    background-color: #15c5fad0;
+    border: 2px solid #15c5fad0;
+    animation: bounce2 20s infinite alternate;
+    -webkit-animation: bounce2 1s infinite alternate;
+  }
+  @keyframes bounce2 {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-75px);
+    }
+  }
+  @-webkit-keyframes bounce2 {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+.ball span:nth-child(3) {
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -520px;
+    margin-top: -300px;
+    background-color: #15c5fad0;
+    border: 2px solid #15c5fad0;
+    animation: bounce3 20s infinite alternate;
+    -webkit-animation: bounce3 1s infinite alternate;
+  }
+  @keyframes bounce3 {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-75px);
+    }
+  }
+  @-webkit-keyframes bounce3 {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }

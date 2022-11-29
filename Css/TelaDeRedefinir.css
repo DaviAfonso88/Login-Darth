@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Poppins", sans-serif
+}
+
+
+.ball span:nth-child(1) {
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -520px;
+    margin-top: -200px;
+    background-color: #15c5fad0;
+    border: 2px solid #15c5fad0;
+    animation: bounce 20s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-95px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+.ball span:nth-child(2) {
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -520px;
+    margin-top: -400px;
+    background-color: #15c5fad0;
+    border: 2px solid #15c5fad0;
+    animation: bounce2 20s infinite alternate;
+    -webkit-animation: bounce2 1s infinite alternate;
+  }
+  @keyframes bounce2 {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(95px);
+    }
+  }
+  @-webkit-keyframes bounce2 {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+
+.text{
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+
+h1{
+    margin-bottom: 40px;
+    margin-right: 180px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.seta{
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    margin-top: -32px;
+    margin-left: -160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--red);
+}
+
+
+.um{
+    color: #c7c7c7;
+    margin-bottom: 20px;
+    margin-right: 120px;
+}
+
+.dois{
+    margin-bottom: 3px;
+    margin-top: 5px;
+    margin-left: -70px;
+    font-size: 17px;
+    color: #15c5fad0;
+}
+
+.tres{
+    margin-left: -70px;
+    color: #c7c7c7;
+    margin-bottom: 30px;
+    font-size: 14px;
+    width: 150%;
+}
+
+body{
+    background:linear-gradient(#004C99,#03315f);
+    background-repeat: no-repeat;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+#nameForm{
+    width: 600px;
+    height: 460px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 15px;
+    border-bottom: 2px solid;
+    border-top: 2px solid; 
+    border-left: 2px solid; 
+    border-right: 2px solid; 
+    border-color: #858585;
+    
+    
+}
+
+.box{
+    flex-direction: column;
+    padding: 80px 120px 50px;
+    margin-top: -70px;
+}
+
+.linha{
+    position: absolute;
+    padding: 10px 800px;
+    overflow: hidden;
+    border: none;
+    height: 10px;
+    margin-left: -800px;
+    cursor:context-menu;
+   
+    
+}
+
+.linha span {
+    position: absolute;
+    display: block;
+}
+
+.linha span:nth-child(1) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(1deg, transparent, #15c5fad0);
+    animation: btnv3 5s linear infinite;
+    animation-delay: .90s;
+}
+
+@keyframes btnv3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.novasenha, .confirmarsenha{
+    margin-bottom: 25px;
+    align-items: center;
+    display: block;
+    width: 132%;
+    margin-left: -100px;
+    padding: 16px 41px;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    border-radius: 7px;
+    border-bottom: 2px solid;
+    border-top: 2px solid; 
+    border-left: 2px solid; 
+    border-right: 2px solid; 
+    border-color: #858585;
+    
+
+    
+ 
+}
+
+.novasenha:hover, .confirmarsenha:hover{
+    border-color: #666565;
+    
+}
+
+label{
+    position:fixed;
+    top: 0;
+    left: 0;
+    color: #c7c7c7;
+    font-size: 17px;
+    pointer-events: none;
+    transition: .5s;
+    width: 10%;
+}
+
+.nova{
+    pointer-events: none;
+    margin-top: 358px;
+    padding: 0px 730px;
+    position: absolute;
+    color: #c7c7c7;
+}
+
+.novasenha:focus ~ .nova,
+.novasenha:valid ~ .nova{
+    top: -15px;
+    left: -30px;
+    color: #15c5fad0;
+    font-size: 13px;
+    
+}
+
+.novasenha:focus, .novasenha:valid  {
+    border-color: #15c5fad0;
+}
+
+.confirmar{
+    margin-top: 546px;
+    padding: 0px 730px;
+}
+
+
+.confirmarsenha:focus ~ .confirmar,
+.confirmarsenha:valid ~ .confirmar{
+    top: -15px;
+    left: -30px;
+    color: #15c5fad0;
+    font-size: 13px;
+    
+    
+}
+
+.confirmarsenha:focus, .confirmarsenha:valid  {
+    border-color: #15c5fad0;
+}
+
+
+form input[type="submit"] {
+    cursor: pointer;
+    width: 40%;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: 180px;
+    border: none;
+    border-radius: 5px;
+    background: #15c5fad0;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    padding: 12px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    transition: .5s;
+
+   
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+    background: #1289add8;
+    box-shadow: 0px 10px 40px -12px #000000;
+}
+
+.logo{
+    height: 95px;
+    width: 200px;
+    margin-top: 4px;
+    padding: 20px 50px;
+    z-index: 10;
+    position: relative;
+    margin-top: -50px;
+}
+
+@media (max-width:975px){
+    #nameForm{
+        width: 80%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .box{
+        margin-left: 25px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 150%;
+        margin-left: -100px;
+    }
+    form input[type="submit"] {
+        width: 99%;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:679px){
+    #nameForm{
+        width: 80%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .box{
+        padding: 80px 120px 50px;
+        margin-left: 25px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 130%;
+        margin-left: -74px;
+        padding: 16px 41px;
+        font-size: 16px;
+    }
+    form input[type="submit"] {
+        width: 80%;
+        margin-left: 38px;
+        font-size: 13px;
+        font-weight: 800;
+    }
+}
+
+@media (max-width:602px){
+    #nameForm{
+        width: 80%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .box{
+        padding: 80px 120px 50px;
+        margin-left: 25px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 120%;
+        margin-left: -65px;
+        padding: 16px 41px;
+        font-size: 15px;
+    }
+    form input[type="submit"] {
+        width: 75%;
+        margin-left: 43px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width:374px) and (max-width:411px){
+    #nameForm{
+        width: 81%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .box{
+        padding: 80px 120px 50px;
+        margin-left: 9px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 180%;
+        margin-left: -100px;
+        padding: 16px 75px;
+        font-size: 13px;
+        text-align: left;
+    }
+    form input[type="submit"] {
+        width: 75%;
+        margin-left: 38px;
+        font-size: 11px;
+    }
+    form input[type="submit"]:hover {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:414px) and (min-width:412px){
+    #nameForm{
+        width: 81%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .box{
+        padding: 80px 120px 50px;
+        margin-left: 30px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 180%;
+        margin-left: -115px;
+        padding: 16px 75px;
+        font-size: 15px;
+        text-align: left;
+    }
+    form input[type="submit"] {
+        width: 75%;
+        margin-left: 42px;
+        font-size: 13px;
+    }
+    form input[type="submit"]:hover {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:540px) and (min-width:523px){
+    #nameForm{
+        width: 81%;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .box{
+        padding: 80px 120px 50px;
+        margin-left: 30px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 130%;
+        margin-left: -115px;
+        padding: 16px 75px;
+        font-size: 15px;
+        text-align: left;
+    }
+    form input[type="submit"] {
+        width: 75%;
+        margin-left: 55px;
+        font-size: 13px;
+    }
+    form input[type="submit"]:hover {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:411px) and (min-width:390px){
+    #nameForm{
+        width: 81%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .box{
+         padding: 80px 120px 50px;
+        margin-left: 8px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 180%;
+        margin-left: -106px;
+        padding: 16px 75px;
+        font-size: 13px;
+        text-align: left;
+    }
+    form input[type="submit"] {
+        font-size: 12px;
+    }
+    form input[type="submit"]:hover {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width:529px) and (min-width:419px){
+    #nameForm{
+        width: 81%;
+    }
+    h1{
+        font-size: 25px;
+    }
+    .box{
+         padding: 80px 120px 50px;
+        margin-left: 8px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 130%;
+        margin-left: -106px;
+        padding: 16px 75px;
+        font-size: 13px;
+        text-align: left;
+    }
+    form input[type="submit"] {
+        font-size: 12px;
+    }
+    form input[type="submit"]:hover {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width:360px) and (max-width:410px) {
+    #nameForm{
+        width: 81%;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .box{
+        padding: 80px 120px 50px;
+        margin-left: 9px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 180%;
+        margin-left: -100px;
+        padding: 16px 75px;
+        font-size: 12px;
+        text-align: left;
+    }
+    form input[type="submit"] {
+        font-size: 10px;
+        margin-left: 37px;
+    }
+    form input[type="submit"]:hover {
+        font-size: 12px;
+    }
+
+}
+
+@media (min-width:240px) and (max-width:359px) {
+    #nameForm{
+        width: 81%;
+    }
+    h1{
+        font-size: 18px;
+    }
+    .box{
+        padding: 80px 120px 50px;
+        margin-left: 9px;
+    }
+    #novasenha, #confirmarsenha{
+        width: 180%;
+        margin-left: -100px;
+        padding: 16px 75px;
+        font-size: 12px;
+        text-align: left;
+    }
+    form input[type="submit"] {
+        font-size: 10px;
+        margin-left: 37px;
+    }
+    form input[type="submit"]:hover {
+        font-size: 12px;
+    }
+
+}
+

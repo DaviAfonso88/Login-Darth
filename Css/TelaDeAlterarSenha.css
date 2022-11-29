@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../assets/android-animate.svg");
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-color:#03315f;
+}
+
+.Alterar{
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0px 10px 40px -12px #000000;
+    border-radius: 20px;
+    width: 400px;
+    padding: 40px;
+}
+
+.Alterar h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.box-user{
+    position: relative;
+}
+
+.box-user input{
+    width: 100%;
+    padding: 10px 0;
+    border: 0;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+    
+}
+
+.box-user label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ #labelInput,
+.inputUser:valid ~ #labelInput{
+    top: -20px;
+    left: 0;
+    color: #0775e2;
+    font-size: 13px;
+    
+}
+
+.btns{
+    display: inline-block;
+    padding: 0 30px;
+
+ 
+
+}
+
+.btn1{
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: .5s;
+    overflow: hidden;
+    size: 50%;
+   
+}
+
+.btn1:hover{
+    background:#fff ;
+    border-radius: 5px;
+    color:#09ff00 ;
+}
+
+.btn1 span{
+    position: absolute;
+    display: block;
+}
+
+.btn1 span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btnv 1s linear infinite;
+}
+
+@keyframes btnv{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+
+.btn1 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, #fff);
+    animation: btnv2 1s linear infinite;
+    animation-delay: .20s;
+}
+
+@keyframes btnv2{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+    }
+}
+
+.btn1 span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btnv3 1s linear infinite;
+    animation-delay: .45s;
+}
+
+@keyframes btnv3{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+
+.btn1 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(26deg, transparent, #fff);
+    animation: btnv4 1s linear infinite;
+    animation-delay: .70s;
+}
+
+@keyframes btnv4{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
+
+.btn2{
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: .5s;
+    overflow: hidden;
+    size: 50%;
+  
+}
+
+.btn2:hover{
+    background:#fff ;
+    border-radius: 5px;
+    color:#ff0808 ;
+}
+
+.btn2 span{
+    position: absolute;
+    display: block;
+}
+
+.btn2 span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btnd 1s linear infinite;
+}
+
+@keyframes btnd{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+
+.btn2 span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(100deg, transparent, #fff);
+    animation: btnd2 1s linear infinite;
+    animation-delay: .20s;
+}
+
+@keyframes btnd2{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+    }
+}
+
+.btn2 span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btnd3 1s linear infinite;
+    animation-delay: .45s;
+}
+
+@keyframes btnd3{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+
+.btn2 span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(26deg, transparent, #fff);
+    animation: btnd4 1s linear infinite;
+    animation-delay: .70s;
+}
+
+@keyframes btnd4{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
+
+
+    
+@media (max-width: 450px){
+    .Alterar{
+        width: 90%;
+    }
+}
+
+@media (max-width: 580px){
+   body{
+    background-image: none;
+   }
+}
+
+@media (max-width: 376px){
+    .Alterar h2{
+        font-size: 20px;
+      
+    }
+    .box-user label{
+        font-size: 13px;
+   
+    }
+    .box-user input{
+        font-size: 12px;
+    }
+
+    .btn1{
+        padding: 12px 4px;
+        font-size: 12px;
+      
+
+    }
+    .btn2{
+        padding: 12px 4px;
+        font-size: 12px;
+        margin-left: 6px;
+       
+    }
+}
+
+@media (max-width: 376px){
+    .btn1{
+        padding: 12px 4px;
+        font-size: 11px;
+      
+
+    }
+    .btn2{
+        padding: 12px 4px;
+        font-size: 11px;
+        
+       
+    }
+}
+
+@media (max-width: 364px) and (min-width:286px){
+    .btn1{
+        padding: 12px 1px;
+        font-size: 9px;
+    }
+    .btn2{
+        padding: 12px 1px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 442px) and (min-width:406px){
+    .btn1{
+        padding: 12px 12px;
+    }
+    .btn2{
+        padding: 12px 12px;
+    }
+}
+
+@media (max-width: 404px){
+    .btn1{
+        padding: 12px 9px;
+    }
+    .btn2{
+        padding: 12px 9px;
+    }
+}
+
+@media (max-width: 390px){
+    .btn1{
+        padding: 12px 5px;
+        margin-right: 3px
+    }
+    .btn2{
+        padding: 12px 5px;
+        
+    }
+}

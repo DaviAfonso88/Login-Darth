@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TelaDeLogin">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="Css/TelaDeLogin.css">
+    <script src="Lib/angular-1.8.2/angular.js"></script>
+    <script src="Lib/angular-1.8.2/angular-messages.js"></script>
+    <script src="Controllers/TelaDeLoginCtrl.js"></script>
+</head>
+
+
+<body ng-controller="TelaDeLoginCtrl"> 
+    <div class="logo">
+        <img src="assets/logo.png" alt="logo">
+    </div>
+    <main action="" method="">
+        <h1>Bem Vindo!</h1>
+        <div class="social-media">
+            <a href="https://www.youtube.com/@SescemMinasGerais">
+                <img src="assets/youtube.webp" alt="Google">
+            </a>
+            <a href="https://www.instagram.com/sescmg/">
+                <img src="assets/instragram.webp" alt="Facebook">
+            </a>
+            <a href="https://www.linkedin.com/company/sesc-em-minas-gerais/mycompany/verification/">
+                <img src="assets/linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+
+        <div class="alternative">
+            <span>ACESSE</span>
+        </div>
+
+        <form name="nameForm">
+            <label for="name & email">
+                <span>Login</span>
+                <input type="text" id="usuario" name="usuario" ng-model="usuario" ng-required="true" placeholder="Usuário ou E-mail">
+                <div class="underline"></div>
+            </label>
+            <div ng-show="nameForm.usuario.$error.required && nameForm.usuario.$dirty" style="font-weight: bold; color:#F6BE00">
+                Favor preencher campo Login!
+            </div>
+
+            <label for="password">
+                <span>Senha</span>
+                <input type="password" id="senha" name="senha" ng-model="senha" ng-required="true" placeholder="Senha">
+            </label>
+            <div ng-show="nameForm.senha.$error.required && nameForm.senha.$dirty" style="font-weight: bold; color:#F6BE00">
+                Favor preencher campo Senha!
+            </div>
+
+            <div class="help">
+                <a href="TelaDeAlterarSenha.html">
+                    Esqueceu a senha?
+                </a>
+            </div>
+
+            <input type="submit" value="Entrar" id="button" ng-click="entrar" ng-disabled="nameForm.$invalid">
+            
+            
+            <div class="support">
+                <label>Ainda não tem uma conta?</label>
+                <a href="TelaDeCadastro.html"> Cadastre-se</a>
+            </div>
+        </form>
+
+    </main>
+ 
+    <section class="images">
+        <p class="Titulo">Projeto Modelo</p>
+        <img src="assets/digital-transformation-animate.svg" alt="Mobile">
+        <div class="circle"></div>
+    </section>
+  
+
+    
+</body>
+</html>
