@@ -79,6 +79,29 @@ h1{
     color: #fff;
 }
 
+.error-validation{
+    color: #ff1a1a;
+    position: absolute;
+    top: 65px;
+    margin-left: -80px;
+    font-size: 12px;
+    border-color: #ff1a1a;
+}
+
+.template {
+    display: none;
+}
+
+
+.fa-eye{
+    position: absolute;
+    top: 25px;
+    left: 425px;
+    cursor: pointer;
+    color: #c7c7c7;
+
+}
+
 .seta{
     width: 60px;
     height: 60px;
@@ -114,6 +137,13 @@ h1{
     width: 150%;
 }
 
+.ou{
+    position: relative;
+}
+
+.oi{
+    position: relative;
+}
 body{
     background:linear-gradient(#004C99,#03315f);
     background-repeat: no-repeat;
@@ -123,6 +153,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
    
     
 }
@@ -141,6 +172,7 @@ body{
     border-left: 2px solid; 
     border-right: 2px solid; 
     border-color: #858585;
+    
     
     
 }
@@ -189,7 +221,7 @@ body{
     }
 }
 
-.novasenha, .confirmarsenha{
+.novasenha, #confirmarsenha{
     margin-bottom: 25px;
     align-items: center;
     display: block;
@@ -206,14 +238,15 @@ body{
     border-left: 2px solid; 
     border-right: 2px solid; 
     border-color: #858585;
+    position: relative;
     
 
     
  
 }
 
-.novasenha:hover, .confirmarsenha:hover{
-    border-color: #666565;
+.novasenha:hover, #confirmarsenha:hover{
+    border-color: #15c5fad0;
     
 }
 
@@ -229,11 +262,10 @@ label{
 }
 
 .nova{
-    pointer-events: none;
+
     margin-top: 358px;
     padding: 0px 730px;
-    position: absolute;
-    color: #c7c7c7;
+
 }
 
 .novasenha:focus ~ .nova,
@@ -245,9 +277,9 @@ label{
     
 }
 
-.novasenha:focus, .novasenha:valid  {
+/* .novasenha:focus, .novasenha:valid  {
     border-color: #15c5fad0;
-}
+} */
 
 .confirmar{
     margin-top: 546px;
@@ -255,20 +287,23 @@ label{
 }
 
 
-.confirmarsenha:focus ~ .confirmar,
-.confirmarsenha:valid ~ .confirmar{
+#confirmarsenha:focus ~ .confirmar,
+#confirmarsenha:valid ~ .confirmar{
     top: -15px;
     left: -30px;
     color: #15c5fad0;
     font-size: 13px;
     
     
-}
+} 
 
-.confirmarsenha:focus, .confirmarsenha:valid  {
+/* #confirmarsenha:focus, #confirmarsenha:valid  {
+   border-color: #15c5fad0;
+}  */
+
+/* input:focus {
     border-color: #15c5fad0;
-}
-
+} */
 
 form input[type="submit"] {
     cursor: pointer;
@@ -295,6 +330,7 @@ form input[type="submit"]:hover {
     background: #1289add8;
     box-shadow: 0px 10px 40px -12px #000000;
 }
+
 
 .logo{
     height: 95px;
@@ -572,4 +608,3 @@ form input[type="submit"]:hover {
     }
 
 }
-

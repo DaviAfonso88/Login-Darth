@@ -2,13 +2,9 @@ class Validar {
     constructor() {
         this.validacoes = [
             'data-required',
-            'data-only-letters',
-            'data-min-length',
-            'data-max-length',
-            'data-required',
-            'data-email-validate',
             'data-equal',
             'data-password-validate',
+          
         ]
     }
 
@@ -37,44 +33,6 @@ class Validar {
         let inputValue = input.value;
         if(inputValue === ''){
             let errorMessage = `Este campo é obrigatório`;
-            this.printMessage(input, errorMessage);
-        }
-    }
-
-    minlength(input, minValue){
-        let inputLength = input.value.length;
-        let errorMessage = `O campo precisa ter pelo menos ${minValue} caracteres`;
-        if(inputLength < minValue){
-            this.printMessage(input, errorMessage);
-        }
-    }
-
-    maxlength(input, maxValue){
-        let inputLength = input.value.length;
-        let errorMessage = `O campo precisa ter menos que ${maxValue} caracteres`;
-        if(inputLength > maxValue){
-            this.printMessage(input, errorMessage);
-        }
-    }
-
-    emailvalidate(input){
-        let regular = /\S+@\S+\.\S+/;
-
-        let CadastrarEmail = input.value;
-        let errorMessage = `Insira um e-mail no padrão XXXX@gmail.com`;
-
-        if(!regular.test(CadastrarEmail)){
-            this.printMessage(input, errorMessage);
-        }
-    }
-
-    onlyletters(input){
-        let regular = /^[A-Za-z]+$/;
-
-        let inputValue = input.value
-        let errorMessage = `Este campo não aceita números nem caracteres especiais`
-
-        if(!regular.test(inputValue)){
             this.printMessage(input, errorMessage);
         }
     }
@@ -129,8 +87,8 @@ class Validar {
     }
 }
 
-let form = document.getElementById("registro");
-let submit = document.getElementById("btn");
+let form = document.getElementById("nameForm");
+let submit = document.getElementById("button");
 let validar = new Validar();
 
 submit.addEventListener('click', function (e) {
@@ -141,9 +99,9 @@ submit.addEventListener('click', function (e) {
 
 });
 
-let btnsenha = document.querySelector('#btn1');
-btnsenha.addEventListener('click', ()=>{
-    let inputSenha = document.querySelector('#password')
+let senha = document.querySelector('#exibir');
+senha.addEventListener('click', ()=>{
+    let inputSenha = document.querySelector('#senha')
     if(inputSenha.getAttribute('type') == 'password'){
         inputSenha.setAttribute('type', 'text')
     }else{
@@ -151,9 +109,9 @@ btnsenha.addEventListener('click', ()=>{
     }
 })
 
-let btnConfirm = document.querySelector('#btn2');
-btnConfirm.addEventListener('click', ()=>{
-    let inputConfirmSenha = document.querySelector('#passwordconfirmation')
+let Confirm = document.querySelector('#confirm');
+Confirm.addEventListener('click', ()=>{
+    let inputConfirmSenha = document.querySelector('#confirmarsenha')
     if(inputConfirmSenha.getAttribute('type') == 'password'){
         inputConfirmSenha.setAttribute('type', 'text')
     }else{
@@ -161,3 +119,4 @@ btnConfirm.addEventListener('click', ()=>{
     }
 })
 
+{/* <i class="fa fa-eye-slash" aria-hidden="true"></i> */}

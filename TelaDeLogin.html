@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="Css/TelaDeLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="Lib/angular-1.8.2/angular.js"></script>
     <script src="Lib/angular-1.8.2/angular-messages.js"></script>
     <script src="Controllers/TelaDeLoginCtrl.js"></script>
+    <script src="Js/login.js" defer></script>
 </head>
 
 
@@ -38,7 +40,7 @@
             <label for="name & email">
                 <span>Login</span>
                 <input type="text" id="usuario" name="usuario" ng-model="usuario" ng-required="true" placeholder="Usuário ou E-mail">
-                <div class="underline"></div>
+               
             </label>
             <div ng-show="nameForm.usuario.$error.required && nameForm.usuario.$dirty" style="font-weight: bold; color:#F6BE00">
                 Favor preencher campo Login!
@@ -47,6 +49,7 @@
             <label for="password">
                 <span>Senha</span>
                 <input type="password" id="senha" name="senha" ng-model="senha" ng-required="true" placeholder="Senha">
+                <i class="fa fa-eye" aria-hidden="true"></i>
             </label>
             <div ng-show="nameForm.senha.$error.required && nameForm.senha.$dirty" style="font-weight: bold; color:#F6BE00">
                 Favor preencher campo Senha!

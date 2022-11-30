@@ -182,6 +182,14 @@ section.images img {
 
 }
 
+.fa-eye{
+    position: relative;
+    top: -32px;
+    left: 270px;
+    cursor: pointer;
+    color:rgba(166, 166, 166); 
+}
+
 section.images .circle {
     position: absolute;
     height: 100%;

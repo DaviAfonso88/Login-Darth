@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/TelaDeRedefinir.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="Lib/angular-1.8.2/angular.js"></script>
     <script src="Lib/angular-1.8.2/angular-messages.js"></script>
     <script src="Controllers/TelaDeRedefinirCtrl.js"></script>
+    <script src="Js/redefinir.js" defer></script>
     <title>Tela de Alterar Senha</title>
 </head>
 <body ng-controller="TelaDeRedefinirCtrl">
@@ -20,8 +22,13 @@
     <form action="" method="" id="nameForm">
         <div class="container">
             <div class="box">
-                <input type="password" class="novasenha" required>
-                <label class="nova">Nova senha</label>
+                <p class="error-validation template"></p>
+                <div class="ou">
+                    <input type="password" name="nova senha" class="novasenha" id="senha" data-password-validate data-required>
+                    <label class="nova">Nova senha</label>
+                    <i class="fa fa-eye" aria-hidden="true" id="exibir"></i>
+                </div>
+                <p class="error-validation template"></p>
                 <p class="dois">Nível de segurança da senha:</p>
                 <p class="tres">
                     Mínimo de quatro e máximo de quinze dígitos.
@@ -29,10 +36,14 @@
                      Deve conter letras maiúsculas, minúsculas números e caracteres especiais. 
                     
                     </p>
-                <input type="password" class="confirmarsenha" required>
-                <label class="confirmar">Confirmar senha</label>
+                <div class="oi">
+                    <input type="password" name="confirmpass" id="confirmarsenha" data-required data-equal="nova senha" >
+                    <label id="passconfirmation" for="passconfirmation" class="confirmar">Confirmar senha</label>
+                    <i class="fa fa-eye" aria-hidden="true" id="confirm"></i>
+                </div>
             </div>
-            <input type="submit" value="ALTERAR SENHA" id="button" ng-click="entrar" ng-disabled="nameForm.$invalid">
+            <p class="error-validation template"></p>
+            <input type="submit" value="ALTERAR SENHA" id="button">
         </div>
     </form>
     <div class="">
@@ -44,6 +55,7 @@
         <span></span>
         <span></span>
     </div>
+    <p class="error-validation template"></p>
  
  
 

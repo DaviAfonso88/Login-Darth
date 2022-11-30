@@ -88,6 +88,10 @@ h1 {
     margin-top: -5px;
 }
 
+.check{
+    margin-top: 10px;
+}
+
 input,
 label {
     display: block;
@@ -133,6 +137,14 @@ input {
 
 input:focus {
     border-color: #F6BE00;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 30px;
+    left: 225px;
+    cursor: pointer;
+
 }
 
 
