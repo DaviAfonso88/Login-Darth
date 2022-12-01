@@ -266,9 +266,9 @@ section.images .circle {
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 700px) and (min-width: 632px)   {
     #container{
-        width: 60%;
+        width: 70%;
     }
     .btn1 {
         padding: 12px  90px;
@@ -276,6 +276,13 @@ section.images .circle {
     }
     h1{
         font-size: 20px;
+    }
+    .fa-eye{
+        position: absolute;
+        top: 30px;
+        left: 195px;
+        cursor: pointer;
+    
     }
 }
 
@@ -308,7 +315,25 @@ section.images .circle {
 
 @media(max-width: 414px) {
     #container{
-        width: 85%;
+        width: 75%;
+    }
+    body {
+        padding-top: -10vh;
+    }
+    .btn1 {
+        margin-left: 30px;
+    }
+    #autorizar-label{
+        font-size: 10px;
+    }
+    #termos-label{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 539px) and (min-width: 420px) {
+    #container{
+        width: 75%;
     }
     body {
         padding-top: -10vh;
@@ -324,38 +349,50 @@ section.images .circle {
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 393px) {
 
     .btn1 {
-        margin-left: 28px;
+        margin-left: 25px;
     }
     #autorizar-label{
-        font-size: 10px;
+        font-size: 9px;
     }
     #termos-label{
         font-size: 10px;
     }
 }
 
-@media(min-width: 375px) and (max-width: 376px) {
+@media(min-width: 360px) and (max-width: 376px) {
 
     .btn1 {
-        margin-left: 35px;
+        margin-left: 18px;
     }
     #autorizar-label{
-        font-size: 10px;
+        font-size: 8px;
     }
     #termos-label{
         font-size: 10px;
     }
+    .fa-eye{
+        left: 214px;
+    }
 }
-@media(min-width: 540px) and (max-width: 541px) {
+@media(min-width: 540px) and (max-width: 626px) {
 
     .btn1 {
         margin-left: 38px;
     }
     #container{
-        width: 60%;
+        width: 70%;
+    }
+    #autorizar-label{
+        font-size: 11px;
+    }
+    #termos-label{
+        font-size: 11px;
+    }
+    .fa-eye{
+        left: 295px;
     }
 }
 
@@ -380,4 +417,10 @@ section.images .circle {
         font-weight: 900;
         font-weight: bold;
     }
+    .fa-eye{
+        left: 335px;
+        top: 45px;
+    }
+    
+    
 }
