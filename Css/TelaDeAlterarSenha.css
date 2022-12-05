@@ -52,6 +52,13 @@ body{
     
 }
 
+#resposta{
+    color: #ff1a1a;
+    position: absolute;
+    top: 62px;
+    font-size: 12px;
+}
+
 .box-user label{
     position: absolute;
     top: 0;

@@ -25,6 +25,13 @@ class Validar {
         }, this);
 
     }
+    required(input) {
+        let inputValue = input.value;
+        if (inputValue === '') {
+            let errorMessage = `Este campo é obrigatório`;
+            this.printMessage(input, errorMessage);
+        }
+    }
     emailvalidate(input) {
         let regular = /\S+@\S+\.\S+/;
 
@@ -74,3 +81,8 @@ submit.addEventListener('click', function (e) {
 
 
 // })
+let entrar = document.querySelector('#enviar');
+entrar.addEventListener('click', ()=>{
+    window.location.href = "http://localhost/Login-Sesc/TelaDeRedefinir.html";
+  
+})

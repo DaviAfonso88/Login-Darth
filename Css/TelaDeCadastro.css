@@ -360,6 +360,9 @@ section.images .circle {
     #termos-label{
         font-size: 10px;
     }
+    .error-validation {
+        font-size: 11px;
+    }
 }
 
 @media(min-width: 360px) and (max-width: 376px) {
@@ -376,11 +379,14 @@ section.images .circle {
     .fa-eye{
         left: 214px;
     }
+    .error-validation {
+        font-size: 11px;
+    }
 }
 @media(min-width: 540px) and (max-width: 626px) {
 
     .btn1 {
-        margin-left: 38px;
+        margin-left: 58px;
     }
     #container{
         width: 70%;
@@ -423,4 +429,11 @@ section.images .circle {
     }
     
     
+}
+
+@media (min-width: 912) and (max-width:914){
+    .error-validation {
+        top: 25px;
+        font-size: 19px;
+    }
 }

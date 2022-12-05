@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="TelaDeRedefinir">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +13,13 @@
     <script src="Js/redefinir.js" defer></script>
     <title>Tela de Alterar Senha</title>
 </head>
+
 <body ng-controller="TelaDeRedefinirCtrl">
     <div class="text">
-        <a href="TelaDeLogin.html" class="linkseta"><img class="seta" src="https://cdn-icons-png.flaticon.com/512/66/66822.png" alt="">
+        <a href="TelaDeLogin.html" class="linkseta"><img class="seta"
+                src="https://cdn-icons-png.flaticon.com/512/66/66822.png" alt="">
         </a>
-        <h1>Senha</h1> 
+        <h1>Senha</h1>
     </div>
     <p class="um">Escolha uma senha forte e não a reutilize em outras contas.</p>
     <form action="" method="" id="nameForm">
@@ -24,7 +27,8 @@
             <div class="box">
                 <p class="error-validation template"></p>
                 <div class="ou">
-                    <input type="password" name="nova senha" class="novasenha" id="senha" data-password-validate data-required>
+                    <input type="password" name="nova senha" class="novasenha" id="senha" data-password-validate
+                        data-required>
                     <label class="nova">Nova senha</label>
                     <i class="fa fa-eye" aria-hidden="true" id="exibir"></i>
                 </div>
@@ -32,12 +36,12 @@
                 <p class="dois">Nível de segurança da senha:</p>
                 <p class="tres">
                     Mínimo de quatro e máximo de quinze dígitos.
-                    
-                     Deve conter letras maiúsculas, minúsculas números e caracteres especiais. 
-                    
-                    </p>
+
+                    Deve conter letras maiúsculas, minúsculas números e caracteres especiais.
+
+                </p>
                 <div class="oi">
-                    <input type="password" name="confirmpass" id="confirmarsenha" data-required data-equal="nova senha" >
+                    <input type="password" name="confirmpass" id="confirmarsenha" data-required data-equal="nova senha">
                     <label id="passconfirmation" for="passconfirmation" class="confirmar">Confirmar senha</label>
                     <i class="fa fa-eye" aria-hidden="true" id="confirm"></i>
                 </div>
@@ -48,7 +52,7 @@
     </form>
     <div class="">
         <a href="#" class="linha">
-          <span></span>
+            <span></span>
         </a>
     </div>
     <div class="ball">
@@ -56,9 +60,11 @@
         <span></span>
     </div>
     <p class="error-validation template"></p>
- 
- 
+
+
+
 
 
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -19,23 +19,27 @@
     border: 2px solid #15c5fad0;
     animation: bounce 20s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
-  }
-  @keyframes bounce {
+}
+
+@keyframes bounce {
     from {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
+
     to {
-      transform: translateY(-95px);
+        transform: translateY(-95px);
     }
-  }
-  @-webkit-keyframes bounce {
+}
+
+@-webkit-keyframes bounce {
     from {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
+
     to {
-      transform: translateY(-15px);
+        transform: translateY(-15px);
     }
-  }
+}
 
 .ball span:nth-child(2) {
     position: fixed;
@@ -48,38 +52,42 @@
     border: 2px solid #15c5fad0;
     animation: bounce2 20s infinite alternate;
     -webkit-animation: bounce2 1s infinite alternate;
-  }
-  @keyframes bounce2 {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(95px);
-    }
-  }
-  @-webkit-keyframes bounce2 {
-    from {
-      transform: translateY(0px);
-    }
-    to {
-      transform: translateY(-15px);
-    }
-  }
+}
 
-.text{
+@keyframes bounce2 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(95px);
+    }
+}
+
+@-webkit-keyframes bounce2 {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+.text {
     align-items: center;
     display: flex;
     justify-content: right;
 }
 
-h1{
+h1 {
     margin-bottom: 40px;
     margin-right: 180px;
     font-size: 40px;
     color: #fff;
 }
 
-.error-validation{
+.error-validation {
     color: #ff1a1a;
     position: absolute;
     top: 58px;
@@ -93,7 +101,7 @@ h1{
 }
 
 
-.fa-eye{
+.fa-eye {
     position: absolute;
     top: 21px;
     left: 425px;
@@ -102,7 +110,7 @@ h1{
 
 }
 
-.seta{
+.seta {
     width: 60px;
     height: 60px;
     padding: 20px;
@@ -115,13 +123,13 @@ h1{
 }
 
 
-.um{
+.um {
     color: #c7c7c7;
     margin-bottom: 20px;
     margin-right: 120px;
 }
 
-.dois{
+.dois {
     margin-bottom: 3px;
     margin-top: 5px;
     margin-left: -70px;
@@ -129,7 +137,7 @@ h1{
     color: #15c5fad0;
 }
 
-.tres{
+.tres {
     margin-left: -70px;
     color: #c7c7c7;
     margin-bottom: 30px;
@@ -137,15 +145,16 @@ h1{
     width: 150%;
 }
 
-.ou{
+.ou {
     position: relative;
 }
 
-.oi{
+.oi {
     position: relative;
 }
-body{
-    background:linear-gradient(#004C99,#03315f);
+
+body {
+    background: linear-gradient(#004C99, #03315f);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -154,44 +163,44 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   
 
-    
+
+
 }
 
-#nameForm{
+#nameForm {
     width: 600px;
     height: 460px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: transparent;
     border-radius: 15px;
     border-bottom: 2px solid;
-    border-top: 2px solid; 
-    border-left: 2px solid; 
-    border-right: 2px solid; 
-    border-color: #858585; 
-    
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-color: #858585;
+
 }
 
-.box{
+.box {
     flex-direction: column;
     padding: 80px 120px 50px;
     margin-top: -70px;
 }
 
-.linha{
+.linha {
     position: absolute;
     padding: 10px 800px;
     overflow: hidden;
     border: none;
     height: 10px;
     margin-left: -800px;
-    cursor:context-menu;
-   
-    
+    cursor: context-menu;
+
+
 }
 
 .linha span {
@@ -220,7 +229,8 @@ body{
     }
 }
 
-.novasenha, #confirmarsenha{
+.novasenha,
+#confirmarsenha {
     margin-bottom: 25px;
     align-items: center;
     display: block;
@@ -233,24 +243,25 @@ body{
     font-size: 12px;
     border-radius: 7px;
     border-bottom: 2px solid;
-    border-top: 2px solid; 
-    border-left: 2px solid; 
-    border-right: 2px solid; 
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
     border-color: #858585;
     position: relative;
-    
 
-    
- 
+
+
+
 }
 
-.novasenha:hover, #confirmarsenha:hover{
+.novasenha:hover,
+#confirmarsenha:hover {
     border-color: #15c5fad0;
-    
+
 }
 
-label{
-    position:absolute;
+label {
+    position: absolute;
     top: 80;
     left: 0;
     color: #c7c7c7;
@@ -260,27 +271,27 @@ label{
     width: 10%;
 }
 
-.nova{
+.nova {
     margin-top: 18px;
     width: 40%;
     margin-left: -40px;
-  
+
 }
 
-.confirmar{
+.confirmar {
     margin-top: 18px;
     width: 40%;
     margin-left: -40px;
 }
 
 
-.novasenha:focus ~ .nova,
-.novasenha:valid ~ .nova{
+.novasenha:focus~.nova,
+.novasenha:valid~.nova {
     top: -15px;
     left: -30px;
     color: #15c5fad0;
     font-size: 13px;
-    
+
 }
 
 /* .novasenha:focus, .novasenha:valid  {
@@ -288,15 +299,15 @@ label{
 } */
 
 
-#confirmarsenha:focus ~ .confirmar,
-#confirmarsenha:valid ~ .confirmar{
+#confirmarsenha:focus~.confirmar,
+#confirmarsenha:valid~.confirmar {
     top: -15px;
     left: -30px;
     color: #15c5fad0;
     font-size: 13px;
-    
-    
-} 
+
+
+}
 
 /* #confirmarsenha:focus, #confirmarsenha:valid  {
    border-color: #15c5fad0;
@@ -324,7 +335,7 @@ form input[type="submit"] {
     transition: .5s;
 
 
-   
+
 }
 
 form input[type="submit"]:hover {
@@ -334,7 +345,7 @@ form input[type="submit"]:hover {
 }
 
 
-.logo{
+.logo {
     height: 95px;
     width: 200px;
     margin-top: 4px;
@@ -344,63 +355,78 @@ form input[type="submit"]:hover {
     margin-top: -50px;
 }
 
-@media (max-width: 1595px){
+@media (max-width: 1595px) {
     .linha span:nth-child(1) {
         display: none;
     }
 
 }
 
-@media (max-width: 1065px){
+@media (max-width: 1065px) {
     .ball span:nth-child(1) {
         display: none;
-      }
-    
+    }
+
     .ball span:nth-child(2) {
         display: none;
-      }
+    }
 
 }
 
-@media (min-width: 360px) and (max-width: 739px){
-    #nameForm{
+@media (min-width: 360px) and (max-width: 739px) {
+    #nameForm {
         width: 70%;
     }
-    .text{
+
+    .text {
         width: 50%;
     }
-    .linkseta, h1{
+
+    .linkseta,
+    h1 {
         margin-right: -20px;
         font-size: 42px;
     }
-    .um, .dois, .tres{
+
+    .um,
+    .dois,
+    .tres {
         font-size: 12px;
     }
-    .um{
+
+    .um {
         margin-right: -10px;
         width: 70%;
     }
-    .seta{
+
+    .seta {
         padding: 35px;
     }
-    #senha, #confirmarsenha{
+
+    #senha,
+    #confirmarsenha {
         width: 90%;
         margin-left: -35px;
         margin-top: 1px;
         margin-bottom: -5px;
     }
-    .nova, .confirmar{
+
+    .nova,
+    .confirmar {
         width: 150%;
         padding: 0 50px;
     }
-    .dois, .tres{
+
+    .dois,
+    .tres {
         padding: 0 40px;
         width: 180%;
         margin-top: 38px;
         margin-right: 30px;
-    
-        
+
+
     }
+
     form input[type="submit"] {
         width: 50%;
         margin-left: 85px;
@@ -409,16 +435,18 @@ form input[type="submit"]:hover {
         letter-spacing: 2px;
         font-weight: 500;
     }
-    .fa-eye{
+
+    .fa-eye {
         top: 20px;
         left: 118px;
     }
-    .error-validation{
+
+    .error-validation {
         margin-left: -32px;
         font-size: 10px;
         width: 200%;
 
     }
- 
+
 
 }

@@ -4,13 +4,13 @@ class Validar {
             'data-required',
             'data-equal',
             'data-password-validate',
-          
+
         ]
     }
 
     validate(form) {
         let limparvalidacoes = document.querySelectorAll('form .error-validation');
-        if(limparvalidacoes.length > 0 ){
+        if (limparvalidacoes.length > 0) {
             this.fecharValidacoes(limparvalidacoes);
         }
 
@@ -27,49 +27,41 @@ class Validar {
             }
         }, this);
 
-    } 
+    }
 
-    required(input){
+    required(input) {
         let inputValue = input.value;
-        if(inputValue === ''){
+        if (inputValue === '') {
             let errorMessage = `Este campo é obrigatório`;
             this.printMessage(input, errorMessage);
         }
     }
 
-    passwordvalidate(input){
-        let Arraycrt = input.value.split("");
+    passwordvalidate(input) {
+        let caracter = /^(?=.*[A-Z])(?=.*[!#@$%&*-_=+])(?=.*[0-9])(?=.*[a-z]).{4,15}$/;
+        let Value = input.value
 
-        let maiusculas = 0;
-        let numeros = 0;
 
-        for(let i = 0; Arraycrt.length > i; i++){
-            if(Arraycrt[i] === Arraycrt[i].toUpperCase() && isNaN(parseInt(Arraycrt[i]))){
-                maiusculas++;
-            } else if(!isNaN(parseInt(Arraycrt[i]))){
-                numeros++;
-            }
-        }
-        if(maiusculas === 0 || numeros === 0){
-            let errorMessage = `A senha precisa conter letra maiúscula e números`
+        if (!caracter.test(Value)) {
+            let errorMessage = `A senha precisa conter letra maiúscula, números e caracteres especiais`
             this.printMessage(input, errorMessage);
         }
 
 
     }
 
-    equal(input, inputName){
+    equal(input, inputName) {
         let inputCompara = document.getElementsByName(inputName)[0];
         let errorMessage = `Este campo precisa estar igual ao campo ${inputName}`;
 
-        if(input.value != inputCompara.value){
+        if (input.value != inputCompara.value) {
             this.printMessage(input, errorMessage);
         };
     }
 
-    printMessage(input, msg){
+    printMessage(input, msg) {
         let errorsQtd = input.parentNode.querySelector('.error-validation')
-        if(errorsQtd === null){
+        if (errorsQtd === null) {
             let template = document.querySelector('.error-validation').cloneNode(true);
 
             template.textContent = msg;
@@ -77,12 +69,12 @@ class Validar {
             let inputParent = input.parentNode;
 
             template.classList.remove('template');
-      
+
             inputParent.appendChild(template);
         }
     }
 
-    fecharValidacoes(validacoes){
+    fecharValidacoes(validacoes) {
         validacoes.forEach(remover => remover.remove());
     }
 }
@@ -100,23 +92,23 @@ submit.addEventListener('click', function (e) {
 });
 
 let senha = document.querySelector('#exibir');
-senha.addEventListener('click', ()=>{
+senha.addEventListener('click', () => {
     let inputSenha = document.querySelector('#senha')
-    if(inputSenha.getAttribute('type') == 'password'){
+    if (inputSenha.getAttribute('type') == 'password') {
         inputSenha.setAttribute('type', 'text')
-    }else{
+    } else {
         inputSenha.setAttribute('type', 'password')
     }
 })
 
 let Confirm = document.querySelector('#confirm');
-Confirm.addEventListener('click', ()=>{
+Confirm.addEventListener('click', () => {
     let inputConfirmSenha = document.querySelector('#confirmarsenha')
-    if(inputConfirmSenha.getAttribute('type') == 'password'){
+    if (inputConfirmSenha.getAttribute('type') == 'password') {
         inputConfirmSenha.setAttribute('type', 'text')
-    }else{
+    } else {
         inputConfirmSenha.setAttribute('type', 'password')
     }
 })
 
-{/* <i class="fa fa-eye-slash" aria-hidden="true"></i> */}
+{/* <i class="fa fa-eye-slash" aria-hidden="true"></i> */ }

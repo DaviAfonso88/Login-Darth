@@ -9,12 +9,14 @@ class Validar {
             'data-email-validate',
             'data-equal',
             'data-password-validate',
+            'data-verificaData-validate',
+            'data-isDataValida-validate'
         ]
     }
 
     validate(form) {
         let limparvalidacoes = document.querySelectorAll('form .error-validation');
-        if(limparvalidacoes.length > 0 ){
+        if (limparvalidacoes.length > 0) {
             this.fecharValidacoes(limparvalidacoes);
         }
 
@@ -31,87 +33,114 @@ class Validar {
             }
         }, this);
 
-    } 
+    }
 
-    required(input){
+    required(input) {
         let inputValue = input.value;
-        if(inputValue === ''){
+        if (inputValue === '') {
             let errorMessage = `Este campo é obrigatório`;
             this.printMessage(input, errorMessage);
         }
     }
 
-    minlength(input, minValue){
+    minlength(input, minValue) {
         let inputLength = input.value.length;
         let errorMessage = `O campo precisa ter pelo menos ${minValue} caracteres`;
-        if(inputLength < minValue){
+        if (inputLength < minValue) {
             this.printMessage(input, errorMessage);
         }
     }
 
-    maxlength(input, maxValue){
+    maxlength(input, maxValue) {
         let inputLength = input.value.length;
         let errorMessage = `O campo precisa ter menos que ${maxValue} caracteres`;
-        if(inputLength > maxValue){
+        if (inputLength > maxValue) {
             this.printMessage(input, errorMessage);
         }
     }
 
-    emailvalidate(input){
+    emailvalidate(input) {
         let regular = /\S+@\S+\.\S+/;
 
         let CadastrarEmail = input.value;
         let errorMessage = `Insira um e-mail no padrão XXXX@gmail.com`;
 
-        if(!regular.test(CadastrarEmail)){
+        if (!regular.test(CadastrarEmail)) {
             this.printMessage(input, errorMessage);
         }
     }
 
-    onlyletters(input){
+    onlyletters(input) {
         let regular = /^[A-Za-z]+$/;
 
         let inputValue = input.value
         let errorMessage = `Este campo não aceita números nem caracteres especiais`
 
-        if(!regular.test(inputValue)){
+        if (!regular.test(inputValue)) {
             this.printMessage(input, errorMessage);
         }
     }
 
-    passwordvalidate(input){
-        let Arraycrt = input.value.split("");
+    passwordvalidate(input) {
 
-        let maiusculas = 0;
-        let numeros = 0;
+        let caracter = /^(?=.*[A-Z])(?=.*[!#@$%&*-_=+])(?=.*[0-9])(?=.*[a-z]).{4,15}$/;
+        let Value = input.value
 
-        for(let i = 0; Arraycrt.length > i; i++){
-            if(Arraycrt[i] === Arraycrt[i].toUpperCase() && isNaN(parseInt(Arraycrt[i]))){
-                maiusculas++;
-            } else if(!isNaN(parseInt(Arraycrt[i]))){
-                numeros++;
-            }
-        }
-        if(maiusculas === 0 || numeros === 0){
-            let errorMessage = `A senha precisa conter letra maiúscula e números`
+
+        if (!caracter.test(Value)) {
+            let errorMessage = `A senha precisa conter letra maiúscula, números e caracteres especiais`
             this.printMessage(input, errorMessage);
         }
 
 
     }
 
-    equal(input, inputName){
+    /* Captura a data e o período, chama a função isDataValida() e captura o retorno */
+    verificaData(){
+        var data = document.getElementById('data').value;
+    
+        if (isDataValida(data, 30)){
+       alert('Passou');
+        }else{
+       alert('Não passou');
+        }
+   }
+
+    /* Valida se a data passada como parâmetro está dentro do período informado */
+    isDataValidavalidate(datas, periodo) {
+        var datas = document.getElementById('data').value
+        var arrayData = datas.split('/');
+        var campoDia = parseInt(arrayData[0]);
+        var campoMes = parseInt(arrayData[1]);
+        var campAno = parseInt(arrayData[2]);
+
+        var dataUsuario = new Date();
+        dataUsuario.setDate(campoDia);
+        dataUsuario.setMonth(campoMes - 1);
+        dataUsuario.setFullYear(campAno);
+
+        var dataLimite = new Date();
+        dataLimite.setDate(dataLimite.getDate() + periodo);
+
+        if (dataUsuario.getTime() <= dataLimite.getTime()) {
+            let errorMessage = `Data invalida`
+            this.printMessage(input, errorMessage);
+        } 
+        
+    }
+
+    equal(input, inputName) {
         let inputCompara = document.getElementsByName(inputName)[0];
         let errorMessage = `Este campo precisa estar igual ao campo ${inputName}`;
 
-        if(input.value != inputCompara.value){
+        if (input.value != inputCompara.value) {
             this.printMessage(input, errorMessage);
         };
     }
 
-    printMessage(input, msg){
+    printMessage(input, msg) {
         let errorsQtd = input.parentNode.querySelector('.error-validation')
-        if(errorsQtd === null){
+        if (errorsQtd === null) {
             let template = document.querySelector('.error-validation').cloneNode(true);
 
             template.textContent = msg;
@@ -119,12 +148,12 @@ class Validar {
             let inputParent = input.parentNode;
 
             template.classList.remove('template');
-      
+
             inputParent.appendChild(template);
         }
     }
 
-    fecharValidacoes(validacoes){
+    fecharValidacoes(validacoes) {
         validacoes.forEach(remover => remover.remove());
     }
 }
@@ -142,21 +171,21 @@ submit.addEventListener('click', function (e) {
 });
 
 let btnsenha = document.querySelector('#btn1');
-btnsenha.addEventListener('click', ()=>{
+btnsenha.addEventListener('click', () => {
     let inputSenha = document.querySelector('#password')
-    if(inputSenha.getAttribute('type') == 'password'){
+    if (inputSenha.getAttribute('type') == 'password') {
         inputSenha.setAttribute('type', 'text')
-    }else{
+    } else {
         inputSenha.setAttribute('type', 'password')
     }
 })
 
 let btnConfirm = document.querySelector('#btn2');
-btnConfirm.addEventListener('click', ()=>{
+btnConfirm.addEventListener('click', () => {
     let inputConfirmSenha = document.querySelector('#passwordconfirmation')
-    if(inputConfirmSenha.getAttribute('type') == 'password'){
+    if (inputConfirmSenha.getAttribute('type') == 'password') {
         inputConfirmSenha.setAttribute('type', 'text')
-    }else{
+    } else {
         inputConfirmSenha.setAttribute('type', 'password')
     }
 })

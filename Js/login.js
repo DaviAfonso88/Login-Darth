@@ -13,6 +13,7 @@ let entrar = document.querySelector('#button');
 entrar.addEventListener('click', ()=>{
     var senha = document.getElementById("senha");
     var usuario = document.getElementById("usuario");
+    
     if(senha.value == "" & usuario.value == ""){
         alert("senha e login não informados");
     }
