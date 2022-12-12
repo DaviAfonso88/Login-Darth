@@ -9,8 +9,7 @@ class Validar {
             'data-email-validate',
             'data-equal',
             'data-password-validate',
-            'data-verificaData-validate',
-            'data-isDataValida-validate'
+            'data-error-input'
         ]
     }
 
@@ -37,17 +36,31 @@ class Validar {
 
     required(input) {
         let inputValue = input.value;
-        if (inputValue === '') {
+        let errorsInputreq = input.style.borderBottom = '2px solid #e63636';
+        let labeldate = document.getElementById("label4").style.color = '#f16363';
+        if (inputValue == '') {
             let errorMessage = `Este campo é obrigatório`;
             this.printMessage(input, errorMessage);
+            errorsInputreq; labeldate
+
+        } else if (inputValue !== '') {
+
+            labeldate = document.getElementById("label4").style.color = '';
+            errorsInputreq = input.style.borderBottom = '';
+
         }
+
+
     }
 
     minlength(input, minValue) {
         let inputLength = input.value.length;
         let errorMessage = `O campo precisa ter pelo menos ${minValue} caracteres`;
+        let labeluser = document.getElementById("label3").style.color = '#f16363';
         if (inputLength < minValue) {
-            this.printMessage(input, errorMessage);
+            this.printMessage(input, errorMessage); labeluser;
+        } else {
+            labeluser = document.getElementById("label3").style.color = '';
         }
     }
 
@@ -59,87 +72,84 @@ class Validar {
         }
     }
 
+    onlyletters(input, minValue) {
+        let regular = /^[A-Za-z]+$/;
+        let errorsInput = input.style.borderBottom = '2px solid #e63636';
+        let labelnome = document.getElementById("label1").style.color = '#f16363';
+        let inputValue = input.value;
+        let errorMessage = `Este campo não aceita números nem caracteres especiais`;
+
+        if (!regular.test(inputValue)) {
+            this.printMessage(input, errorMessage); errorsInput; labelnome;
+        }
+
+        else {
+            errorsInput = input.style.borderBottom = '';
+            labelnome = document.getElementById("label1").style.color = '';
+        }
+    }
+
     emailvalidate(input) {
         let regular = /\S+@\S+\.\S+/;
-
+        let errorsInput = input.style.borderBottom = '2px solid #e63636';
+        let labelemail = document.getElementById("label2").style.color = '#f16363';
         let CadastrarEmail = input.value;
         let errorMessage = `Insira um e-mail no padrão XXXX@gmail.com`;
 
         if (!regular.test(CadastrarEmail)) {
             this.printMessage(input, errorMessage);
-        }
-    }
+            errorsInput; labelemail
 
-    onlyletters(input) {
-        let regular = /^[A-Za-z]+$/;
-
-        let inputValue = input.value
-        let errorMessage = `Este campo não aceita números nem caracteres especiais`
-
-        if (!regular.test(inputValue)) {
-            this.printMessage(input, errorMessage);
+        } else if (regular.test(CadastrarEmail)) {
+            errorsInput = input.style.borderBottom = '';
+            labelemail = document.getElementById("label2").style.color = '';
         }
     }
 
     passwordvalidate(input) {
 
         let caracter = /^(?=.*[A-Z])(?=.*[!#@$%&*-_=+])(?=.*[0-9])(?=.*[a-z]).{4,15}$/;
-        let Value = input.value
-
+        let Value = input.value;
+        let labelsenha = document.getElementById("label5").style.color = '#f16363';
+        let errorsInput = input.style.borderBottom = '2px solid #e63636';
+        let eye = document.getElementById("btn1").style.color = '#f16363';
 
         if (!caracter.test(Value)) {
-            let errorMessage = `A senha precisa conter letra maiúscula, números e caracteres especiais`
-            this.printMessage(input, errorMessage);
+            let errorMessage = `A senha precisa conter letra maiúscula, números e caracteres especoais`
+            this.printMessage(input, errorMessage); errorsInput; eye; labelsenha
+
+        } else if (caracter.test(Value)) {
+            errorsInput = input.style.borderBottom = '';
+            eye = document.getElementById("btn1").style.color = '';
+            labelsenha = document.getElementById("label3").style.color = '';
         }
 
 
-    }
-
-    /* Captura a data e o período, chama a função isDataValida() e captura o retorno */
-    verificaData(){
-        var data = document.getElementById('data').value;
-    
-        if (isDataValida(data, 30)){
-       alert('Passou');
-        }else{
-       alert('Não passou');
-        }
-   }
-
-    /* Valida se a data passada como parâmetro está dentro do período informado */
-    isDataValidavalidate(datas, periodo) {
-        var datas = document.getElementById('data').value
-        var arrayData = datas.split('/');
-        var campoDia = parseInt(arrayData[0]);
-        var campoMes = parseInt(arrayData[1]);
-        var campAno = parseInt(arrayData[2]);
-
-        var dataUsuario = new Date();
-        dataUsuario.setDate(campoDia);
-        dataUsuario.setMonth(campoMes - 1);
-        dataUsuario.setFullYear(campAno);
-
-        var dataLimite = new Date();
-        dataLimite.setDate(dataLimite.getDate() + periodo);
-
-        if (dataUsuario.getTime() <= dataLimite.getTime()) {
-            let errorMessage = `Data invalida`
-            this.printMessage(input, errorMessage);
-        } 
-        
     }
 
     equal(input, inputName) {
         let inputCompara = document.getElementsByName(inputName)[0];
         let errorMessage = `Este campo precisa estar igual ao campo ${inputName}`;
+        let labelequal = document.getElementById("label6").style.color = '#f16363';
+        let errorsInput = input.style.borderBottom = '2px solid #e63636';
+        let eye2 = document.getElementById("btn2").style.color = '#f16363';
+
 
         if (input.value != inputCompara.value) {
-            this.printMessage(input, errorMessage);
-        };
+            this.printMessage(input, errorMessage); errorsInput; eye2; labelequal
+
+        } else if (input.value == inputCompara.value && input.value !== "") {
+            errorsInput = input.style.borderBottom = '';
+            eye2 = document.getElementById("btn2").style.color = '';
+            labelequal = document.getElementById("label6").style.color = '';
+        }
     }
 
+
+
     printMessage(input, msg) {
-        let errorsQtd = input.parentNode.querySelector('.error-validation')
+        let errorsQtd = input.parentNode.querySelector('.error-validation');
+
         if (errorsQtd === null) {
             let template = document.querySelector('.error-validation').cloneNode(true);
 
@@ -151,11 +161,13 @@ class Validar {
 
             inputParent.appendChild(template);
         }
+
     }
 
     fecharValidacoes(validacoes) {
         validacoes.forEach(remover => remover.remove());
     }
+
 }
 
 let form = document.getElementById("registro");
@@ -189,4 +201,8 @@ btnConfirm.addEventListener('click', () => {
         inputConfirmSenha.setAttribute('type', 'password')
     }
 })
+
+let campos = document.querySelectorAll('.error-input');
+
+
 
