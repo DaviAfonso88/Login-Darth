@@ -90,7 +90,7 @@ class Validar {
         let inputValue = input.value;
         let errorMessage = `Este campo não aceita números nem caracteres especiais`;
 
-        if (!regular.test(inputValue) || inputValue >= minValue) {
+        if (!regular.test(inputValue)) {
             this.printMessage(input, errorMessage); errorsInput; labelnome;
         }
 
@@ -120,14 +120,14 @@ class Validar {
 
     passwordvalidate(input) {
 
-        let caracter = /^(?=.*[A-Z])(?=.*[!#@$%&*-_=+])(?=.*[0-9])(?=.*[a-z]).{4,15}$/;
+        let caracter = /^(?=.*[A-Z])(?=.*[!#@$_])(?=.*[0-9])(?=.*[a-z]).{4,15}$/;
         let Value = input.value;
         let labelsenha = document.getElementById("label5").style.color = '#f16363';
         let errorsInput = input.style.borderBottom = '2px solid #e63636';
         let eye = document.getElementById("btn1").style.color = '#f16363';
 
         if (!caracter.test(Value)) {
-            let errorMessage = `A senha precisa conter letra maiúscula, números e caracteres especoais`
+            let errorMessage = `A senha precisa conter letra maiúscula, números e caracteres especiais`
             this.printMessage(input, errorMessage); errorsInput; eye; labelsenha
 
         } else if (caracter.test(Value)) {

@@ -45,7 +45,7 @@ class Validar {
     }
 
     passwordvalidate(input) {
-        let caracter = /^(?=.*[A-Z])(?=.*[!#@$%&*-_=+])(?=.*[0-9])(?=.*[a-z]).{4,15}$/;
+        let caracter = /^(?=.*[A-Z])(?=.*[!#@$])(?=.*[0-9])(?=.*[a-z]).{4,15}$/;
         let Value = input.value
         let novasenha = document.getElementById("novasenhalabel").style.color = '#f16363';
         let eye = document.getElementById("exibir").style.color = '#f16363';
