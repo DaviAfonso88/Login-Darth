@@ -5,6 +5,7 @@ class Validar {
             'data-only-letters',
             'data-min-length',
             'data-max-length',
+            'data-date-validate',
             'data-required',
             'data-email-validate',
             'data-equal',
@@ -37,15 +38,12 @@ class Validar {
     required(input) {
         let inputValue = input.value;
         let errorsInputreq = input.style.borderBottom = '2px solid #e63636';
-        let labeldate = document.getElementById("label4").style.color = '#f16363';
         if (inputValue == '') {
             let errorMessage = `Este campo é obrigatório`;
             this.printMessage(input, errorMessage);
-            errorsInputreq; labeldate
+            errorsInputreq;
 
         } else if (inputValue !== '') {
-
-            labeldate = document.getElementById("label4").style.color = '';
             errorsInputreq = input.style.borderBottom = '';
 
         }
@@ -64,6 +62,19 @@ class Validar {
         }
     }
 
+    datevalidate(input, minValue) {
+        let inputLength = input.value.length;
+        let errorMessage = `O campo data esta incompleto`;
+        let labeldate = document.getElementById("label4").style.color = '#f16363';
+        let errorsInput = input.style.borderBottom = '2px solid #e63636';
+        if (inputLength < minValue) {
+            this.printMessage(input, errorMessage); labeldate; errorsInput
+        } else {
+            labeldate = document.getElementById("label4").style.color = '';
+            errorsInput = input.style.borderBottom = '';
+        }
+    }
+
     maxlength(input, maxValue) {
         let inputLength = input.value.length;
         let errorMessage = `O campo precisa ter menos que ${maxValue} caracteres`;
@@ -79,9 +90,10 @@ class Validar {
         let inputValue = input.value;
         let errorMessage = `Este campo não aceita números nem caracteres especiais`;
 
-        if (!regular.test(inputValue)) {
+        if (!regular.test(inputValue) || inputValue >= minValue) {
             this.printMessage(input, errorMessage); errorsInput; labelnome;
         }
+
 
         else {
             errorsInput = input.style.borderBottom = '';
@@ -203,6 +215,53 @@ btnConfirm.addEventListener('click', () => {
 })
 
 let campos = document.querySelectorAll('.error-input');
+
+let input = document.getElementById("data");
+input.addEventListener("keyup", date);
+
+function date(inputData, e) {
+
+    var tecla;
+
+    if (tecla = e.which)
+
+        if (tecla >= 48 && tecla < 58) {
+            var data = inputData.value;
+
+
+            if (data.length == 2) {
+                if (inputData.value >= 1 && inputData.value <= 31) {
+                    data += '/';
+                    inputData.value = data;
+                    return true;
+                }
+                else
+                    return false;
+            }
+
+            if (data.length == 5) {
+                mes = data[3] + "" + data[4];
+                if (mes >= 1 && mes <= 12) {
+                    data += '/';
+                    inputData.value = data;
+                    return true;
+                }
+                else
+                    return false;
+            }
+
+            if (data.length == 8) {
+                if (ano >= 19 && ano <= 21) {
+                    inputData.value = data;
+                    return true;
+                }
+                else
+                    return false;
+            }
+
+        }
+}
+
 
 
 
