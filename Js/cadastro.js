@@ -102,11 +102,11 @@ class Validar {
     }
 
     emailvalidate(input) {
-        let regular = /\S+@\S+\.\S+/;
+        let regular =  /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
         let errorsInput = input.style.borderBottom = '2px solid #e63636';
         let labelemail = document.getElementById("label2").style.color = '#f16363';
         let CadastrarEmail = input.value;
-        let errorMessage = `Insira um e-mail no padrão XXXX@gmail.com`;
+        let errorMessage = `Insira um e-mail no padrão XXXX@gmail.com.br`;
 
         if (!regular.test(CadastrarEmail)) {
             this.printMessage(input, errorMessage);
@@ -221,47 +221,64 @@ input.addEventListener("keyup", date);
 
 function date(inputData, e) {
 
-    var tecla;
+    var tecla = e.which;
 
-    if (tecla = e.which)
+    if (tecla >= 47 && tecla < 58) {
 
-        if (tecla >= 48 && tecla < 58) {
-            var data = inputData.value;
+        var data = inputData.value;
 
+        if (data.length == 2) {
 
-            if (data.length == 2) {
-                if (inputData.value >= 1 && inputData.value <= 31) {
-                    data += '/';
-                    inputData.value = data;
-                    return true;
-                }
-                else
-                    return false;
+            if (inputData.value >= 1 && inputData.value <= 31) {
+
+                data += '/';
+
+                inputData.value = data;
+
             }
 
-            if (data.length == 5) {
-                mes = data[3] + "" + data[4];
-                if (mes >= 1 && mes <= 12) {
-                    data += '/';
-                    inputData.value = data;
-                    return true;
-                }
-                else
-                    return false;
-            }
+            else
 
-            if (data.length == 8) {
-                if (ano >= 19 && ano <= 21) {
-                    inputData.value = data;
-                    return true;
-                }
-                else
-                    return false;
-            }
+                return false;
 
         }
+
+        if (data.length == 5) {
+
+            mes = data[3] + data[4];
+
+            if (mes >= 1 && mes <= 12) {
+
+                data += '/';
+                inputData.value = data;
+
+            }
+
+            else
+
+                return false;
+
+        }
+
+        if (data.length == 8) {
+
+            ano = data[6] + data[7];
+
+            if (ano >= 19 && ano <= 21) {
+                inputData.value = data;
+                return true;
+            }
+            else
+                return false;
+        }
+
+
+    } else if (tecla == 8 || tecla == 0)
+
+        return true;
+
+    else
+
+        return false;
+
 }
-
-
-
-
