@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="TelaDeLogin">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
 </head>
 
 
-<body ng-controller="TelaDeLoginCtrl"> 
+<body ng-controller="TelaDeLoginCtrl">
     <div class="logo">
         <img src="assets/logo.png" alt="logo">
     </div>
@@ -39,9 +40,11 @@
         <form name="nameForm">
             <label for="name & email">
                 <span>Login</span>
-                <input type="text" id="usuario" name="usuario" ng-model="usuario" ng-required="true" placeholder="Usuário ou E-mail">
+                <input type="text" id="usuario" name="usuario" ng-model="usuario" ng-required="true"
+                    placeholder="Usuário ou E-mail">
             </label>
-            <div ng-show="nameForm.usuario.$error.required && nameForm.usuario.$dirty" style="font-weight: bold; color:#F6BE00">
+            <div ng-show="nameForm.usuario.$error.required && nameForm.usuario.$dirty"
+                style="font-weight: bold; color:#F6BE00">
                 Favor preencher campo Login!
             </div>
 
@@ -49,8 +52,10 @@
                 <span>Senha</span>
                 <input type="password" id="senha" name="senha" ng-model="senha" ng-required="true" placeholder="Senha">
                 <i class="fa fa-eye" aria-hidden="true"></i>
+                <!-- <i class="fa fa-eye-slash" aria-hidden="true"></i> -->
             </label>
-            <div ng-show="nameForm.senha.$error.required && nameForm.senha.$dirty" style="font-weight: bold; color:#F6BE00">
+            <div ng-show="nameForm.senha.$error.required && nameForm.senha.$dirty"
+                style="font-weight: bold; color:#F6BE00">
                 Favor preencher campo Senha!
             </div>
 
@@ -61,8 +66,8 @@
             </div>
 
             <input type="submit" value="Entrar" id="button">
-            
-            
+
+
             <div class="support">
                 <label>Ainda não tem uma conta?</label>
                 <a href="TelaDeCadastro.html"> Cadastre-se</a>
@@ -70,15 +75,16 @@
         </form>
 
     </main>
-  
- 
+
+
     <section class="images">
         <p class="Titulo">Projeto Modelo</p>
         <img src="assets/digital-transformation-animate.svg" alt="Mobile">
         <div class="circle"></div>
     </section>
-  
 
-    
+
+
 </body>
+
 </html>

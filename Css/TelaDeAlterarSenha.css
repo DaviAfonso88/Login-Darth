@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 }
 
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,18 +16,18 @@ body{
     background-image: url("../assets/android-animate.svg");
     background-repeat: no-repeat;
     background-image: cover;
-    background-color:#03315f;
+    background-color: #03315f;
 }
 
-.Alterar{
-    background-color: rgba(0,0,0,.5);
+.Alterar {
+    background-color: rgba(0, 0, 0, .5);
     box-shadow: 0px 10px 40px -12px #000000;
     border-radius: 20px;
     width: 400px;
     padding: 40px;
 }
 
-.Alterar h2{
+.Alterar h2 {
     margin-bottom: 30px;
     font-size: 30px;
     color: #fff;
@@ -35,11 +35,11 @@ body{
 }
 
 
-.box-user{
+.box-user {
     position: relative;
 }
 
-.box-user input{
+.box-user input {
     width: 100%;
     padding: 10px 0;
     border: 0;
@@ -49,17 +49,17 @@ body{
     color: #fff;
     font-size: 16px;
     margin-bottom: 30px;
-    
+
 }
 
-#resposta{
+#resposta {
     color: #ff1a1a;
     position: absolute;
     top: 62px;
     font-size: 12px;
 }
 
-.box-user label{
+.box-user label {
     position: absolute;
     top: 0;
     left: 0;
@@ -70,13 +70,13 @@ body{
     transition: .5s;
 }
 
-.inputUser:focus ~ #labelInput,
-.inputUser:valid ~ #labelInput{
+.inputUser:focus~#labelInput,
+.inputUser:valid~#labelInput {
     top: -20px;
     left: 0;
     color: #0775e2;
     font-size: 13px;
-    
+
 }
 
 .error-validation {
@@ -86,15 +86,15 @@ body{
     font-size: 12px;
 }
 
-.btns{
+.btns {
     display: inline-block;
     padding: 0 30px;
 
- 
+
 
 }
 
-.btn1{
+.btn1 {
     position: relative;
     display: inline-block;
     padding: 12px 20px;
@@ -108,21 +108,22 @@ body{
     transition: .5s;
     overflow: hidden;
     size: 50%;
-   
+
 }
 
-.btn1:hover{
-    background:#fff ;
+.btn1:hover {
+    background: #fff;
     border-radius: 5px;
-    color:#09ff00 ;
+    color: #18d112;
+
 }
 
-.btn1 span{
+.btn1 span {
     position: absolute;
     display: block;
 }
 
-.btn1 span:nth-child(1){
+.btn1 span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -131,17 +132,18 @@ body{
     animation: btnv 1s linear infinite;
 }
 
-@keyframes btnv{
-    0%{
+@keyframes btnv {
+    0% {
         left: -100%;
     }
+
     50%,
-    100%{
+    100% {
         left: 100%;
     }
 }
 
-.btn1 span:nth-child(2){
+.btn1 span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 4px;
@@ -151,17 +153,18 @@ body{
     animation-delay: .20s;
 }
 
-@keyframes btnv2{
-    0%{
+@keyframes btnv2 {
+    0% {
         top: -100%;
     }
+
     50%,
-    100%{
+    100% {
         top: 100%;
     }
 }
 
-.btn1 span:nth-child(3){
+.btn1 span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -171,17 +174,18 @@ body{
     animation-delay: .45s;
 }
 
-@keyframes btnv3{
-    0%{
+@keyframes btnv3 {
+    0% {
         right: -100%;
     }
+
     50%,
-    100%{
+    100% {
         right: 100%;
     }
 }
 
-.btn1 span:nth-child(4){
+.btn1 span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 4px;
@@ -191,17 +195,18 @@ body{
     animation-delay: .70s;
 }
 
-@keyframes btnv4{
-    0%{
+@keyframes btnv4 {
+    0% {
         bottom: -100%;
     }
+
     50%,
-    100%{
+    100% {
         bottom: 100%;
     }
 }
 
-.btn2{
+.btn2 {
     position: relative;
     display: inline-block;
     padding: 12px 20px;
@@ -215,21 +220,21 @@ body{
     transition: .5s;
     overflow: hidden;
     size: 50%;
-  
+
 }
 
-.btn2:hover{
-    background:#fff ;
+.btn2:hover {
+    background: #fff;
     border-radius: 5px;
-    color:#ff0808 ;
+    color: #ff0808;
 }
 
-.btn2 span{
+.btn2 span {
     position: absolute;
     display: block;
 }
 
-.btn2 span:nth-child(1){
+.btn2 span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -238,17 +243,18 @@ body{
     animation: btnd 1s linear infinite;
 }
 
-@keyframes btnd{
-    0%{
+@keyframes btnd {
+    0% {
         left: -100%;
     }
+
     50%,
-    100%{
+    100% {
         left: 100%;
     }
 }
 
-.btn2 span:nth-child(2){
+.btn2 span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 4px;
@@ -258,17 +264,18 @@ body{
     animation-delay: .20s;
 }
 
-@keyframes btnd2{
-    0%{
+@keyframes btnd2 {
+    0% {
         top: -100%;
     }
+
     50%,
-    100%{
+    100% {
         top: 100%;
     }
 }
 
-.btn2 span:nth-child(3){
+.btn2 span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -278,17 +285,18 @@ body{
     animation-delay: .45s;
 }
 
-@keyframes btnd3{
-    0%{
+@keyframes btnd3 {
+    0% {
         right: -100%;
     }
+
     50%,
-    100%{
+    100% {
         right: 100%;
     }
 }
 
-.btn2 span:nth-child(4){
+.btn2 span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 4px;
@@ -298,116 +306,127 @@ body{
     animation-delay: .70s;
 }
 
-@keyframes btnd4{
-    0%{
+@keyframes btnd4 {
+    0% {
         bottom: -100%;
     }
+
     50%,
-    100%{
+    100% {
         bottom: 100%;
     }
 }
 
 
-    
-@media (max-width: 450px){
-    .Alterar{
+
+@media (max-width: 450px) {
+    .Alterar {
         width: 90%;
     }
 }
 
-@media (max-width: 580px){
-   body{
-    background-image: none;
-   }
+@media (max-width: 580px) {
+    body {
+        background-image: none;
+    }
 }
 
-@media (max-width: 376px){
-    .Alterar h2{
+@media (max-width: 376px) {
+    .Alterar h2 {
         font-size: 20px;
-      
+
     }
-    .box-user label{
+
+    .box-user label {
         font-size: 13px;
-   
+
     }
-    .box-user input{
+
+    .box-user input {
         font-size: 12px;
     }
 
-    .btn1{
+    .btn1 {
         padding: 12px 4px;
         font-size: 12px;
-      
+
 
     }
-    .btn2{
+
+    .btn2 {
         padding: 12px 4px;
         font-size: 12px;
         margin-left: 6px;
-       
+
     }
 }
 
-@media (max-width: 376px){
-    .btn1{
+@media (max-width: 376px) {
+    .btn1 {
         padding: 12px 4px;
         font-size: 11px;
-      
+
 
     }
-    .btn2{
+
+    .btn2 {
         padding: 12px 4px;
         font-size: 11px;
-        
-       
+
+
     }
 }
 
-@media (max-width: 364px) and (min-width:286px){
-    .btn1{
+@media (max-width: 364px) and (min-width:286px) {
+    .btn1 {
         padding: 12px 1px;
         font-size: 9px;
     }
-    .btn2{
+
+    .btn2 {
         padding: 12px 1px;
         font-size: 9px;
     }
-    .Alterar h2{
+
+    .Alterar h2 {
         font-size: 18px;
-      
+
     }
 }
 
-@media (max-width: 442px) and (min-width:406px){
-    .btn1{
+@media (max-width: 442px) and (min-width:406px) {
+    .btn1 {
         padding: 12px 12px;
     }
-    .btn2{
+
+    .btn2 {
         padding: 12px 12px;
     }
 }
 
-@media (max-width: 404px){
-    .btn1{
+@media (max-width: 404px) {
+    .btn1 {
         padding: 12px 9px;
     }
-    .btn2{
+
+    .btn2 {
         padding: 12px 9px;
     }
 }
 
-@media (max-width: 393px){
-    .btn1{
+@media (max-width: 393px) {
+    .btn1 {
         padding: 12px 5px;
         margin-right: 3px
     }
-    .btn2{
+
+    .btn2 {
         padding: 12px 5px;
-        
+
     }
-    .Alterar h2{
+
+    .Alterar h2 {
         font-size: 19px;
-      
+
     }
 }

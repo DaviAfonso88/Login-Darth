@@ -11,7 +11,7 @@
 
 
 body {
-    background:linear-gradient(#004C99,#03315f);
+    background: linear-gradient(#004C99, #03315f);
     background: cover;
     background-repeat: no-repeat;
     color: white;
@@ -28,16 +28,17 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 main h1 {
     color: #ffffffda;
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: center;
     position: relative;
-    
+
 }
 
-main h1::before{
+main h1::before {
     content: '';
     position: absolute;
     height: 4px;
@@ -45,7 +46,7 @@ main h1::before{
     bottom: 5px;
     left: 0;
     border-radius: 8px;
-    background:linear-gradient(#F6BE00,#daa703);
+    background: linear-gradient(#F6BE00, #daa703);
 }
 
 main.social-media {
@@ -79,7 +80,8 @@ main .alternative span {
 
 }
 
-main .alternative span::before, main .alternative span::after {
+main .alternative span::before,
+main .alternative span::after {
     position: absolute;
     content: '';
     height: 2px;
@@ -123,19 +125,19 @@ main form input {
     border-radius: 8px;
 }
 
-main form input:hover{
+main form input:hover {
     background-color: #00264d;
     box-shadow: 0px 10px 40px -12px #f6bd00a8;
 }
 
 main form input[type="submit"] {
-   
+
     cursor: pointer;
     width: 80%;
     margin-top: 2rem;
     border: none;
     border-radius: 32px;
-    background: linear-gradient(to left, #F6BE00,#004C99);
+    background: linear-gradient(to left, #F6BE00, #004C99);
     color: white;
     font-size: 1.1rem;
     transition: all 0.3s ease;
@@ -143,7 +145,7 @@ main form input[type="submit"] {
 }
 
 main form input[type="submit"]:hover {
-    background: linear-gradient(to right, #F6BE00,#004C99);
+    background: linear-gradient(to right, #F6BE00, #004C99);
     letter-spacing: 0.5px;
 }
 
@@ -160,7 +162,7 @@ section.images img {
     width: 100%;
 }
 
-.logo{
+.logo {
     height: 45px;
     width: 167px;
     margin-top: 4px;
@@ -169,7 +171,7 @@ section.images img {
     position: relative;
 }
 
-.Titulo{
+.Titulo {
     font-size: 3rem;
     margin-bottom: 3rem;
     text-align: right;
@@ -181,14 +183,20 @@ section.images img {
     font-weight: bold;
     text-transform: uppercase;
 
+
 }
 
-.fa-eye{
+.fa-eye {
     position: relative;
     top: -32px;
     left: 270px;
     cursor: pointer;
-    color:rgba(166, 166, 166); 
+    color: rgba(166, 166, 166);
+
+}
+
+.fa-eye-slash {
+    display: none;
 }
 
 section.images .circle {
@@ -202,32 +210,32 @@ section.images .circle {
     z-index: -1;
 }
 
-.support{
-    color:#ffffffda;
-    flex-direction:column;
+.support {
+    color: #ffffffda;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     display: flex;
     margin-top: 45px;
 }
 
-.support > a{
-    color:#ffffffda
+.support>a {
+    color: #ffffffda
 }
 
-.support > a:hover{
-    color:#F6BE00;
+.support>a:hover {
+    color: #F6BE00;
 }
 
-.help{
+.help {
     align-items: left;
     margin-top: 5px;
     margin-right: 140px;
     display: flex;
- 
+
 }
 
-.help > a{
+.help>a {
     text-decoration: none;
     color: #737373;
 }
@@ -236,7 +244,7 @@ section.images .circle {
     text-decoration: underline;
 }
 
-.error{
+.error {
     font-size: 1px;
 }
 
@@ -249,33 +257,33 @@ section.images .circle {
         clip-path: circle(35% at right 80%);
     }
 
-    .Titulo{
+    .Titulo {
         font-size: 3rem;
         height: 130px;
-    
-    
+
+
     }
 }
 
 @media only screen and (min-width: 1429px) and (max-width: 1527px) {
 
-    .Titulo{
+    .Titulo {
         font-size: 3rem;
         height: 160px;
-    
-    
+
+
     }
 }
 
 @media only screen and (max-width: 1427px) {
 
-    .Titulo{
+    .Titulo {
         display: none;
     }
 }
 
 @media only screen and (max-width: 975px) {
-    section.images{
+    section.images {
         display: none;
         visibility: hidden;
     }
@@ -284,12 +292,12 @@ section.images .circle {
         width: 100vw;
     }
 
-    .logo{
+    .logo {
         display: none;
         visibility: hidden;
     }
 
-    main h1::before{
+    main h1::before {
         content: '';
         position: absolute;
         height: 4px;
@@ -299,8 +307,8 @@ section.images .circle {
     }
 }
 
-@media only screen and (max-width: 899px) and (min-width: 450px){
-    main h1::before{
+@media only screen and (max-width: 899px) and (min-width: 450px) {
+    main h1::before {
         content: '';
         position: absolute;
         height: 4px;
@@ -315,18 +323,18 @@ section.images .circle {
         font-size: 2rem;
     }
 
-    main h1::before{
+    main h1::before {
         content: '';
         width: 134px;
-     
+
     }
 
     main .alternative span {
         font-size: 0.8rem;
     }
 
-    main form label span, main form input[type="submit"] {
+    main form label span,
+    main form input[type="submit"] {
         font-size: 1rem;
     }
 }
-

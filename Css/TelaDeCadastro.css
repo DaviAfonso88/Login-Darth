@@ -12,21 +12,21 @@
 
 body {
     padding-top: 10vh;
-    background:linear-gradient(#004C99,#03315f);
+    background: linear-gradient(#004C99, #03315f);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
     min-width: 100vw;
 }
 
-.logo{
+.logo {
     position: absolute;
     margin-top: -90px;
     padding: 20px 50px;
     z-index: 0;
 }
 
-.linha{
+.linha {
     position: absolute;
     padding: 12px 220px;
     color: #F6BE00;
@@ -36,8 +36,8 @@ body {
     border: none;
     height: 40px;
     overflow: hidden;
-    
-    
+
+
 }
 
 .linha span {
@@ -88,7 +88,7 @@ h1 {
     margin-top: -5px;
 }
 
-.check{
+.check {
     margin-top: 10px;
 }
 
@@ -139,7 +139,7 @@ input:focus {
     border-color: #F6BE00;
 }
 
-.fa-eye{
+.fa-eye {
     position: absolute;
     top: 30px;
     left: 225px;
@@ -151,7 +151,7 @@ input:focus {
 .btn1 {
     position: relative;
     display: inline-block;
-    padding: 12px  197px;
+    padding: 12px 197px;
     background: #F6BE00;
     color: #172031;
     text-decoration: none;
@@ -170,20 +170,22 @@ input:focus {
     background: #F6BE00;
     border-radius: 15px;
     color: #ffffff;
+    box-shadow: 0px 10px 40px -12px #000000;
 }
 
 
-#termos, #termos-label {
+#termos,
+#termos-label {
     display: inline-block;
     width: auto;
     margin-right: 5px;
 }
 
-#termos-label > a{
+#termos-label>a {
     text-decoration: none;
 }
 
-#termos-label > a:hover{
+#termos-label>a:hover {
     text-decoration: underline;
 }
 
@@ -198,8 +200,8 @@ input:focus {
 
 }
 
-#data{
-    cursor:text;
+#data {
+    cursor: text;
 }
 
 .retorno {
@@ -215,15 +217,18 @@ input:focus {
 }
 
 .error-validation {
-    color: #ff1a1a;
+    color: #e63636;
     position: absolute;
     top: 62px;
     font-size: 12px;
+
 }
 
 .template {
     display: none;
 }
+
+
 
 section.images {
     width: 40vw;
@@ -248,65 +253,74 @@ section.images .circle {
     z-index: -1;
 }
 
-@media (max-width: 1481px){
-    .linha{
+@media (max-width: 1481px) {
+    .linha {
         display: none;
     }
 }
 
-@media (max-width: 1105px){
-    .logo{
+@media (max-width: 1105px) {
+    .logo {
         display: none;
     }
 }
 
-@media (max-width: 715px){
-    .circle{
+@media (max-width: 715px) {
+    .circle {
         display: none;
     }
 }
 
-@media(max-width: 700px) and (min-width: 632px)   {
-    #container{
+@media(max-width: 700px) and (min-width: 632px) {
+    #container {
         width: 70%;
     }
+
     .btn1 {
-        padding: 12px  90px;
+        padding: 12px 90px;
         margin-left: 35px;
     }
-    h1{
+
+    h1 {
         font-size: 20px;
     }
-    .fa-eye{
+
+    .fa-eye {
         position: absolute;
         top: 30px;
         left: 195px;
         cursor: pointer;
-    
+
     }
 }
 
 @media(max-width: 630px) {
-    #container{
+    #container {
         width: 50%;
     }
+
     .btn1 {
-        padding: 12px  40px;
+        padding: 12px 40px;
         margin-left: 30px;
     }
-    h1{
+
+    h1 {
         font-size: 20px;
         margin-bottom: 4px;
     }
-    #password{
+
+    #password {
         margin-right: 200px;
     }
-    #autorizar-label{
+
+    #autorizar-label {
         font-size: 10px;
     }
-    #termos-label{
+
+    #termos-label {
         font-size: 10px;
     }
+
     body {
         padding-top: 2vh;
     }
@@ -314,37 +328,45 @@ section.images .circle {
 
 
 @media(max-width: 414px) {
-    #container{
+    #container {
         width: 75%;
     }
+
     body {
         padding-top: -10vh;
     }
+
     .btn1 {
         margin-left: 30px;
     }
-    #autorizar-label{
+
+    #autorizar-label {
         font-size: 10px;
     }
-    #termos-label{
+
+    #termos-label {
         font-size: 10px;
     }
 }
 
 @media(max-width: 539px) and (min-width: 420px) {
-    #container{
+    #container {
         width: 75%;
     }
+
     body {
         padding-top: -10vh;
     }
+
     .btn1 {
         margin-left: 45px;
     }
-    #autorizar-label{
+
+    #autorizar-label {
         font-size: 11px;
     }
-    #termos-label{
+
+    #termos-label {
         font-size: 11px;
     }
 }
@@ -354,12 +376,15 @@ section.images .circle {
     .btn1 {
         margin-left: 25px;
     }
-    #autorizar-label{
+
+    #autorizar-label {
         font-size: 9px;
     }
-    #termos-label{
+
+    #termos-label {
         font-size: 10px;
     }
+
     .error-validation {
         font-size: 11px;
     }
@@ -370,68 +395,83 @@ section.images .circle {
     .btn1 {
         margin-left: 18px;
     }
-    #autorizar-label{
+
+    #autorizar-label {
         font-size: 8px;
     }
-    #termos-label{
+
+    #termos-label {
         font-size: 10px;
     }
-    .fa-eye{
+
+    .fa-eye {
         left: 214px;
     }
+
     .error-validation {
         font-size: 11px;
     }
 }
+
 @media(min-width: 540px) and (max-width: 626px) {
 
     .btn1 {
         margin-left: 58px;
     }
-    #container{
+
+    #container {
         width: 70%;
     }
-    #autorizar-label{
+
+    #autorizar-label {
         font-size: 11px;
     }
-    #termos-label{
+
+    #termos-label {
         font-size: 11px;
     }
-    .fa-eye{
+
+    .fa-eye {
         left: 295px;
     }
 }
 
-@media (min-width: 912px) and (max-width: 915px){
-    #container{
+@media (min-width: 912px) and (max-width: 915px) {
+    #container {
         width: 90%;
     }
-    #autorizar-label{
+
+    #autorizar-label {
         font-size: 18px;
     }
-    #termos-label{
+
+    #termos-label {
         font-size: 18px;
     }
-    label{
+
+    label {
         font-size: 20px;
     }
-    input{
+
+    input {
         font-size: 20px;
     }
-    .btn1{
+
+    .btn1 {
         margin-left: 120px;
         font-weight: 900;
         font-weight: bold;
     }
-    .fa-eye{
+
+    .fa-eye {
         left: 335px;
         top: 45px;
     }
-    
-    
+
+
 }
 
-@media (min-width: 912) and (max-width:914){
+@media (min-width: 912) and (max-width:914) {
     .error-validation {
         top: 25px;
         font-size: 19px;

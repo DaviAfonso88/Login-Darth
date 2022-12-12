@@ -82,7 +82,7 @@ submit.addEventListener('click', function (e) {
 
 // })
 let entrar = document.querySelector('#enviar');
-entrar.addEventListener('click', ()=>{
+entrar.addEventListener('click', () => {
     window.location.href = "http://localhost/Login-Sesc/TelaDeRedefinir.html";
-  
+
 })

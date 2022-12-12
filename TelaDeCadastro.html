@@ -27,31 +27,32 @@
     <h1>Cadastre-se</h1>
     <form action="" method="" id="registro" action="">
       <div class="full-box">
-        <label for="name">Nome</label> <!-- colocar carecter espepecial ou não -->
+        <label for="name" id="label1">Nome</label> <!-- colocar carecter espepecial ou não -->
         <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="4"
           data-max-length="50" data-only-letters>
       </div>
       <div class="full-box">
-        <label for="email">E-mail</label>
+        <label for="email" id="label2">E-mail</label>
         <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required data-email-validate>
       </div>
       <div class="half-box spacing">
-        <label for="lastname">Usuário</label>
+        <label for="lastname" id="label3">Usuário</label>
         <input type="text" name="lastname" id="lastname" placeholder="Digite seu usuário" data-required
           data-min-length="4" data-max-length="10">
       </div>
       <div class="half-box">
-        <label for="lastname">Data de Nascimento</label>
-        <input type="text" name="data" id="data" ng-model="CadastrarData" data-required data-verificaData-validate data-isDataValida-validate>
+        <label for="lastname" id="label4">Data de Nascimento</label>
+        <input type="date" name="data" id="data" ng-model="CadastrarData" data-required data-verificaData-validate
+          data-isDataValida-validate>
       </div>
       <div class="half-box spacing">
-        <label for="lastname">Senha</label> <!-- como colocar carecter espepecial na validação -->
+        <label for="lastname" id="label5">Senha</label> <!-- como colocar carecter espepecial na validação -->
         <input type="password" name="senha" id="password" placeholder="Digite sua senha" data-password-validate
-           data-required>
+          data-required>
         <i class="fa fa-eye" aria-hidden="true" id="btn1"></i>
       </div>
       <div class="half-box">
-        <label id="passconfirmation" for="passconfirmation">Confirmação de senha</label>
+        <label id="label6" for="passconfirmation">Confirmação de senha</label>
         <input type="password" name="passconfirmation" id="passwordconfirmation"
           placeholder="Digite novamente sua senha" data-equal="senha" data-required>
         <i class="fa fa-eye" aria-hidden="true" id="btn2"></i>
@@ -75,6 +76,7 @@
     </form>
   </div>
   <p class="error-validation template"></p>
+  <p class="error-input temp"></p>
   <section class="images">
     <div class="circle"></div>
   </section>

@@ -249,9 +249,6 @@ body {
     border-color: #858585;
     position: relative;
 
-
-
-
 }
 
 .novasenha:hover,
@@ -294,11 +291,6 @@ label {
 
 }
 
-/* .novasenha:focus, .novasenha:valid  {
-    border-color: #15c5fad0;
-} */
-
-
 #confirmarsenha:focus~.confirmar,
 #confirmarsenha:valid~.confirmar {
     top: -15px;
@@ -308,14 +300,6 @@ label {
 
 
 }
-
-/* #confirmarsenha:focus, #confirmarsenha:valid  {
-   border-color: #15c5fad0;
-}  */
-
-/* input:focus {
-    border-color: #15c5fad0;
-} */
 
 form input[type="submit"] {
     cursor: pointer;
@@ -373,7 +357,7 @@ form input[type="submit"]:hover {
 
 }
 
-@media (min-width: 360px) and (max-width: 739px) {
+@media (min-width: 300px) and (max-width: 735px) {
     #nameForm {
         width: 70%;
     }
@@ -448,5 +432,239 @@ form input[type="submit"]:hover {
 
     }
 
+
+}
+
+@media (min-width: 595px) and (max-width: 735px) {
+
+    .linkseta,
+    h1 {
+        margin-right: -20px;
+        font-size: 42px;
+    }
+
+    .um {
+        margin-right: -10px;
+        width: 70%;
+    }
+
+    .dois,
+    .tres {
+        width: 150%;
+    }
+
+    form input[type="submit"] {
+        margin-left: 120px;
+    }
+
+    .fa-eye {
+        top: 20px;
+        left: 262px;
+    }
+
+
+}
+
+@media (max-width: 713px) {
+
+    .fa-eye {
+        left: 255px;
+    }
+
+
+}
+
+@media (max-width: 704px) {
+
+    .fa-eye {
+        left: 250px;
+    }
+
+
+}
+
+
+@media (max-width: 693px) {
+
+    .fa-eye {
+        left: 243px;
+    }
+}
+
+@media (max-width: 682px) {
+
+    .fa-eye {
+        left: 236px;
+    }
+}
+
+@media (max-width: 671px) {
+
+    .fa-eye {
+        left: 230px;
+    }
+}
+
+@media (max-width: 661px) {
+
+    .fa-eye {
+        left: 224px;
+    }
+}
+
+@media (max-width: 651px) {
+
+    .fa-eye {
+        left: 218px;
+    }
+}
+
+@media (max-width: 641px) {
+
+    .fa-eye {
+        left: 210px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .fa-eye {
+        left: 205px;
+
+    }
+}
+
+@media (max-width: 620px) {
+
+    .fa-eye {
+        left: 195px;
+
+    }
+}
+
+
+@media (max-width: 607px) {
+
+    .fa-eye {
+        left: 190px;
+
+    }
+}
+
+@media (max-width: 598px) {
+
+    .fa-eye {
+        left: 185px;
+
+    }
+}
+
+@media (max-width: 588px) {
+
+    .fa-eye {
+        left: 178px;
+
+    }
+}
+
+@media (max-width: 578px) {
+
+    .fa-eye {
+        left: 172px;
+
+    }
+}
+
+@media (max-width: 568px) {
+
+    .fa-eye {
+        left: 165px;
+
+    }
+}
+
+@media (max-width: 558px) {
+
+    .fa-eye {
+        left: 160px;
+
+    }
+}
+
+@media (max-width: 548px) {
+
+    .fa-eye {
+        left: 155px;
+
+    }
+}
+
+@media (max-width: 539px) {
+
+    .fa-eye {
+        left: 150px;
+
+    }
+}
+
+@media (max-width: 531px) {
+
+    .fa-eye {
+        left: 145px;
+
+    }
+}
+
+@media (max-width: 524px) {
+
+    .fa-eye {
+        left: 140px;
+
+    }
+}
+
+@media (max-width: 516px) {
+
+    .fa-eye {
+        left: 135px;
+
+    }
+}
+
+@media (max-width: 510px) {
+
+    .fa-eye {
+        left: 130px;
+
+    }
+}
+
+@media (min-width: 300px) and (max-width: 360px) {
+
+    .linkseta,
+    h1 {
+        font-size: 30px;
+    }
+
+    .dois,
+    .tres {
+        font-size: 10px;
+    }
+
+    form input[type="submit"] {
+        margin-left: 105px;
+        font-size: 10px;
+        width: 40%;
+    }
+
+    .fa-eye {
+        left: 115px;
+    }
+
+    .seta {
+        height: 50px;
+        padding: 30px;
+        margin-left: -150px;
+    }
 
 }
