@@ -49,6 +49,7 @@ class Validar {
         let Value = input.value
         let novasenha = document.getElementById("novasenhalabel").style.color = '#f16363';
         let eye = document.getElementById("exibir").style.color = '#f16363';
+        let slash = document.getElementById("pass").style.color = '#f16363';
         let errorsInput = input.style.border = '2px solid #e63636';
 
 
@@ -59,6 +60,7 @@ class Validar {
         } else if (caracter.test(Value)) {
             errorsInput = input.style.border = '';
             eye = document.getElementById("exibir").style.color = '';
+            slash = document.getElementById("pass").style.color = '';
             novasenha = document.getElementById("novasenhalabel").style.color = '';
 
         }
@@ -72,6 +74,7 @@ class Validar {
         let confirmarsenha = document.getElementById("confirmarlabel").style.color = '#f16363';
         let errorsInput = input.style.border = '2px solid #e63636';
         let eye2 = document.getElementById("confirm").style.color = '#f16363';
+        let slash2 = document.getElementById("pass2").style.color = '#f16363';
 
         if (input.value != inputCompara.value) {
             this.printMessage(input, errorMessage); errorsInput; eye2; confirmarsenha
@@ -79,6 +82,7 @@ class Validar {
         } else if (input.value == inputCompara.value && input.value !== "") {
             errorsInput = input.style.border = '';
             eye2 = document.getElementById("confirm").style.color = '';
+            slash2 = document.getElementById("pass2").style.color = '';
             confirmarsenha = document.getElementById("confirmarlabel").style.color = '';
         }
     }

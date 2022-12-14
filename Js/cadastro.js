@@ -125,6 +125,7 @@ class Validar {
         let labelsenha = document.getElementById("label5").style.color = '#f16363';
         let errorsInput = input.style.borderBottom = '2px solid #e63636';
         let eye = document.getElementById("btn1").style.color = '#f16363';
+        let slash = document.getElementById("pass").style.color = '#f16363';
 
         if (!caracter.test(Value)) {
             let errorMessage = `A senha precisa conter letra maiúscula, números e caracteres especiais`
@@ -133,7 +134,8 @@ class Validar {
         } else if (caracter.test(Value)) {
             errorsInput = input.style.borderBottom = '';
             eye = document.getElementById("btn1").style.color = '';
-            labelsenha = document.getElementById("label3").style.color = '';
+            slash = document.getElementById("pass").style.color = '';
+            labelsenha = document.getElementById("label5").style.color = '';
         }
 
 
@@ -145,6 +147,7 @@ class Validar {
         let labelequal = document.getElementById("label6").style.color = '#f16363';
         let errorsInput = input.style.borderBottom = '2px solid #e63636';
         let eye2 = document.getElementById("btn2").style.color = '#f16363';
+        let slash2 = document.getElementById("pass2").style.color = '#f16363';
 
 
         if (input.value != inputCompara.value) {
@@ -153,6 +156,7 @@ class Validar {
         } else if (input.value == inputCompara.value && input.value !== "") {
             errorsInput = input.style.borderBottom = '';
             eye2 = document.getElementById("btn2").style.color = '';
+            slash2 = document.getElementById("pass2").style.color = '';
             labelequal = document.getElementById("label6").style.color = '';
         }
     }
