@@ -78,6 +78,7 @@
     align-items: center;
     display: flex;
     justify-content: right;
+    position: relative;
 }
 
 h1 {
@@ -88,7 +89,7 @@ h1 {
 }
 
 .error-validation {
-    color: #ff1a1a;
+    color: #f37979;
     position: absolute;
     top: 58px;
     margin-left: -80px;
@@ -101,13 +102,23 @@ h1 {
 }
 
 
-.fa-eye {
+#confirm,
+#exibir {
     position: absolute;
     top: 21px;
     left: 425px;
     cursor: pointer;
     color: #c7c7c7;
+    display: none;
+}
 
+#pass,
+#pass2 {
+    position: absolute;
+    top: 21px;
+    left: 425px;
+    cursor: pointer;
+    color: #c7c7c7;
 }
 
 .seta {
@@ -599,7 +610,7 @@ form input[type="submit"]:hover {
     }
 }
 
-@media (max-width: 539px) {
+@media (max-width: 542px) {
 
     .fa-eye {
         left: 150px;

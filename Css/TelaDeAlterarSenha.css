@@ -109,6 +109,7 @@ body {
     overflow: hidden;
     size: 50%;
 
+
 }
 
 .btn1:hover {
@@ -331,6 +332,8 @@ body {
     }
 }
 
+
+
 @media (max-width: 376px) {
     .Alterar h2 {
         font-size: 20px;
@@ -347,8 +350,9 @@ body {
     }
 
     .btn1 {
-        padding: 12px 4px;
+        padding: 12px 8px;
         font-size: 12px;
+        margin-left: 18px;
 
 
     }
@@ -361,7 +365,7 @@ body {
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 378px) {
     .btn1 {
         padding: 12px 4px;
         font-size: 11px;
@@ -377,10 +381,12 @@ body {
     }
 }
 
-@media (max-width: 364px) and (min-width:286px) {
+@media (max-width: 430px) and (min-width:286px) {
     .btn1 {
         padding: 12px 1px;
         font-size: 9px;
+        margin-left: 30px;
+
     }
 
     .btn2 {
@@ -392,6 +398,80 @@ body {
         font-size: 18px;
 
     }
+
+}
+
+@media (max-width: 375px) and (min-width:335px) {
+    .btn1 {
+        margin-left: -15px;
+
+    }
+
+    .btn2 {
+        margin-left: 35px;
+    }
+
+}
+
+@media (max-width: 360px) and (min-width:340px) {
+    .btn1 {
+        margin-left: -10px;
+
+    }
+
+    .btn2 {
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width: 342px) and (min-width:314px) {
+    .btn1 {
+        margin-left: -20px;
+
+    }
+
+    .btn2 {
+        margin-left: 6px;
+    }
+
+}
+
+@media (max-width: 313px) and (min-width:304px) {
+    .btn1 {
+        margin-left: -20px;
+
+    }
+
+    .btn2 {
+        margin-left: -2px;
+    }
+
+}
+
+@media (max-width: 303px) and (min-width:300px) {
+    .btn1 {
+        margin-left: -20px;
+
+    }
+
+    .btn2 {
+        margin-left: -3px;
+    }
+
+}
+
+@media (max-width: 331px) and (min-width:286px) {
+    .btn1 {
+        padding: 2px;
+        font-size: 8px;
+    }
+
+    .btn2 {
+        padding: 2px;
+        font-size: 8px;
+    }
+
 }
 
 @media (max-width: 442px) and (min-width:406px) {
@@ -414,7 +494,7 @@ body {
     }
 }
 
-@media (max-width: 393px) {
+@media (max-width: 418px) {
     .btn1 {
         padding: 12px 5px;
         margin-right: 3px

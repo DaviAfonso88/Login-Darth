@@ -27,16 +27,19 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
 }
 
 main h1 {
     color: #ffffffda;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     text-align: center;
     position: relative;
+    top: 100px;
 
 }
+
 
 main h1::before {
     content: '';
@@ -47,29 +50,74 @@ main h1::before {
     left: 0;
     border-radius: 8px;
     background: linear-gradient(#F6BE00, #daa703);
+
 }
 
-main.social-media {
+.btn_social {
+    width: 100%;
+    float: left;
     display: flex;
-    align-content: center;
+    margin: auto;
+    margin-top: 150px;
+
 }
 
-main .social-media a {
+.btn_social ul {
+    width: auto;
+    margin: auto;
+    float: left;
+    display: block;
+}
+
+.btn_social ul li {
+    position: relative;
+    background: #555555;
+    list-style: none;
+    float: left;
+    margin: 10px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 3px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.btn_social ul li a {
+    width: 50px;
+    height: 50px;
+    line-height: 53px;
+    display: block;
     text-decoration: none;
+    color: #fff;
+    transition: .4s;
 }
 
-main .social-media img {
-    width: 36px;
-    margin-left: 3rem;
+.btn_social ul li::before {
+    transition: 0.4s;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 90%;
+    left: 0;
+    background: #F6BE00;
+    z-index: -1;
+    transform: scale(1);
+    transition: .4s;
 }
 
-main .social-media a:first-child img {
-    margin-left: 0;
+.btn_social ul li:hover::before {
+    transition: 0.4s;
+    top: 0%;
 }
 
-main .alternative {
-    margin-top: 1rem;
-    box-shadow: 0px 10px 10px -12px #f6bd00a8;
+.btn_social ul li a:hover {
+    color: #555555;
+}
+
+
+.alternative {
+    position: absolute;
 }
 
 main .alternative span {
@@ -77,6 +125,7 @@ main .alternative span {
     font-weight: 400;
     color: #f6bd008e;
     position: relative;
+    top: -115px;
 
 }
 
@@ -90,16 +139,24 @@ main .alternative span::after {
     right: 70px;
     background: #f6bd008e;
 
+
 }
 
 main .alternative span::after {
     left: 70px;
+
 }
 
 main form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: -30px;
+
+}
+
+.loginn {
+    margin-bottom: 70px;
 }
 
 main form label {
@@ -119,10 +176,11 @@ main form input {
     padding: 0 0.5rem;
     margin-top: 1rem;
     outline: none;
-    color: rgba(166, 166, 166);
+    color: #a6a6a6;
     font-size: 1rem;
     border: 1px solid #044381;
     border-radius: 8px;
+    top: 200px;
 }
 
 main form input:hover {
@@ -186,7 +244,7 @@ section.images img {
 
 }
 
-.fa-eye {
+#pass2 {
     position: relative;
     top: -32px;
     left: 270px;
@@ -195,9 +253,15 @@ section.images img {
 
 }
 
-.fa-eye-slash {
+#pass {
+    position: relative;
+    top: -32px;
+    left: 270px;
+    cursor: pointer;
+    color: rgba(166, 166, 166);
     display: none;
 }
+
 
 section.images .circle {
     position: absolute;

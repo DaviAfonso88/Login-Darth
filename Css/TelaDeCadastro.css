@@ -88,8 +88,58 @@ h1 {
     margin-top: -5px;
 }
 
+
 .check {
     margin-top: 10px;
+    display: flex;
+    align-items: right;
+
+}
+
+.check2 {
+    display: flex;
+    margin-top: -8px;
+}
+
+.checkbox {
+    appearance: none;
+    height: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #F6BE00;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    top: -3px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.checkbox:before {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 4px;
+    background: none;
+    opacity: 0;
+    transition: all 600ms ease-in-out;
+    border-right: 4px solid #004C99;
+    border-bottom: 4px solid #004C99;
+    transform: rotate(45deg);
+    top: 1px;
+    margin-left: -4px;
+
+}
+
+.checkbox:checked:before {
+    opacity: 1;
+
+}
+
+.checkbox:focus {
+    box-shadow: 0 0 5px #F6BE00;
+
 }
 
 input,
@@ -139,14 +189,22 @@ input:focus {
     border-color: #F6BE00;
 }
 
-.fa-eye {
+#pass,
+#pass2 {
     position: absolute;
     top: 30px;
     left: 225px;
     cursor: pointer;
-
 }
 
+#btn1,
+#btn2 {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 225px;
+    cursor: pointer;
+}
 
 .btn1 {
     position: relative;
@@ -178,7 +236,7 @@ input:focus {
 #termos-label {
     display: inline-block;
     width: auto;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 #termos-label>a {
@@ -190,7 +248,7 @@ input:focus {
 }
 
 #autorizar {
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 #autorizar,
@@ -271,7 +329,7 @@ section.images .circle {
     }
 }
 
-@media(max-width: 700px) and (min-width: 632px) {
+@media(max-width: 700px) and (min-width: 540px) {
     #container {
         width: 70%;
     }
@@ -327,7 +385,7 @@ section.images .circle {
 }
 
 
-@media(max-width: 414px) {
+@media(max-width: 419px) {
     #container {
         width: 75%;
     }
@@ -346,6 +404,11 @@ section.images .circle {
 
     #termos-label {
         font-size: 10px;
+    }
+
+    #user {
+        margin-right: 200px;
+
     }
 }
 
@@ -369,6 +432,11 @@ section.images .circle {
     #termos-label {
         font-size: 11px;
     }
+
+    #user {
+        margin-right: 200px;
+
+    }
 }
 
 @media(max-width: 393px) {
@@ -388,6 +456,20 @@ section.images .circle {
     .error-validation {
         font-size: 11px;
     }
+
+    #user {
+        margin-right: 200px;
+
+    }
+
+    #container {
+        width: 78%;
+    }
+
+    .fa-eye {
+        left: 225px;
+    }
+
 }
 
 @media(min-width: 360px) and (max-width: 376px) {
@@ -405,15 +487,24 @@ section.images .circle {
     }
 
     .fa-eye {
-        left: 214px;
+        left: 225px;
     }
 
     .error-validation {
         font-size: 11px;
     }
+
+    #user {
+        margin-right: 200px;
+
+    }
+
+    #container {
+        width: 80%;
+    }
 }
 
-@media(min-width: 540px) and (max-width: 626px) {
+@media(min-width: 540px) and (max-width: 700px) {
 
     .btn1 {
         margin-left: 58px;
@@ -435,6 +526,35 @@ section.images .circle {
         left: 295px;
     }
 }
+
+@media(min-width: 631px) and (max-width: 700px) {
+
+    .fa-eye {
+        left: 175px;
+    }
+}
+
+@media(min-width: 418px) and (max-width: 538px) {
+
+    .fa-eye {
+        left: 270px;
+    }
+}
+
+@media(min-width: 497px) {
+
+    .fa-eye {
+        left: 230px;
+    }
+}
+
+@media(min-width: 418px) and (max-width: 499px) {
+
+    .fa-eye {
+        left: 300px;
+    }
+}
+
 
 @media (min-width: 912px) and (max-width: 915px) {
     #container {

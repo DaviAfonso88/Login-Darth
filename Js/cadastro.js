@@ -83,8 +83,8 @@ class Validar {
         }
     }
 
-    onlyletters(input, minValue) {
-        let regular = /^[A-Za-z]+$/;
+    onlyletters(input) {
+        let regular = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/;
         let errorsInput = input.style.borderBottom = '2px solid #e63636';
         let labelnome = document.getElementById("label1").style.color = '#f16363';
         let inputValue = input.value;
@@ -102,7 +102,7 @@ class Validar {
     }
 
     emailvalidate(input) {
-        let regular =  /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+        let regular = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
         let errorsInput = input.style.borderBottom = '2px solid #e63636';
         let labelemail = document.getElementById("label2").style.color = '#f16363';
         let CadastrarEmail = input.value;
@@ -194,23 +194,41 @@ submit.addEventListener('click', function (e) {
 
 });
 
-let btnsenha = document.querySelector('#btn1');
-btnsenha.addEventListener('click', () => {
-    let inputSenha = document.querySelector('#password')
-    if (inputSenha.getAttribute('type') == 'password') {
-        inputSenha.setAttribute('type', 'text')
-    } else {
-        inputSenha.setAttribute('type', 'password')
+var tipo = document.getElementById('password')
+document.getElementById('pass').addEventListener('click', () => {
+    if (tipo.value) {
+        tipo.type == 'password' ? tipo.type = 'text' : tipo.type = 'password';
+        tipo.focus()
+        document.getElementById('pass').style.display = 'none';
+        document.getElementById('btn1').style.display = 'inline-block';
     }
 })
 
-let btnConfirm = document.querySelector('#btn2');
-btnConfirm.addEventListener('click', () => {
-    let inputConfirmSenha = document.querySelector('#passwordconfirmation')
-    if (inputConfirmSenha.getAttribute('type') == 'password') {
-        inputConfirmSenha.setAttribute('type', 'text')
-    } else {
-        inputConfirmSenha.setAttribute('type', 'password')
+document.getElementById('btn1').addEventListener('click', () => {
+    if (tipo.value) {
+        tipo.type == 'text' ? tipo.type = 'password' : tipo.type = 'text';
+        tipo.focus()
+        document.getElementById('btn1').style.display = 'none';
+        document.getElementById('pass').style.display = 'inline-block';
+    }
+})
+
+var tipo2 = document.getElementById('passwordconfirmation')
+document.getElementById('pass2').addEventListener('click', () => {
+    if (tipo2.value) {
+        tipo2.type == 'password' ? tipo2.type = 'text' : tipo.type = 'password';
+        tipo2.focus()
+        document.getElementById('pass2').style.display = 'none';
+        document.getElementById('btn2').style.display = 'inline-block';
+    }
+})
+
+document.getElementById('btn2').addEventListener('click', () => {
+    if (tipo2.value) {
+        tipo2.type == 'text' ? tipo2.type = 'password' : tipo2.type = 'text';
+        tipo2.focus()
+        document.getElementById('btn2').style.display = 'none';
+        document.getElementById('pass2').style.display = 'inline-block';
     }
 })
 

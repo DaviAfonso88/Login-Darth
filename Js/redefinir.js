@@ -115,23 +115,41 @@ submit.addEventListener('click', function (e) {
 
 });
 
-let senha = document.querySelector('#exibir');
-senha.addEventListener('click', () => {
-    let inputSenha = document.querySelector('#senha')
-    if (inputSenha.getAttribute('type') == 'password') {
-        inputSenha.setAttribute('type', 'text')
-    } else {
-        inputSenha.setAttribute('type', 'password')
+var tipo = document.getElementById('senha')
+document.getElementById('pass').addEventListener('click', () => {
+    if (tipo.value) {
+        tipo.type == 'password' ? tipo.type = 'text' : tipo.type = 'password';
+        tipo.focus()
+        document.getElementById('pass').style.display = 'none';
+        document.getElementById('exibir').style.display = 'inline-block';
     }
 })
 
-let Confirm = document.querySelector('#confirm');
-Confirm.addEventListener('click', () => {
-    let inputConfirmSenha = document.querySelector('#confirmarsenha')
-    if (inputConfirmSenha.getAttribute('type') == 'password') {
-        inputConfirmSenha.setAttribute('type', 'text')
-    } else {
-        inputConfirmSenha.setAttribute('type', 'password')
+document.getElementById('exibir').addEventListener('click', () => {
+    if (tipo.value) {
+        tipo.type == 'text' ? tipo.type = 'password' : tipo.type = 'text';
+        tipo.focus()
+        document.getElementById('exibir').style.display = 'none';
+        document.getElementById('pass').style.display = 'inline-block';
+    }
+})
+
+var tipo2 = document.getElementById('confirmarsenha')
+document.getElementById('pass2').addEventListener('click', () => {
+    if (tipo2.value) {
+        tipo2.type == 'password' ? tipo2.type = 'text' : tipo.type = 'password';
+        tipo2.focus()
+        document.getElementById('pass2').style.display = 'none';
+        document.getElementById('confirm').style.display = 'inline-block';
+    }
+})
+
+document.getElementById('confirm').addEventListener('click', () => {
+    if (tipo2.value) {
+        tipo2.type == 'text' ? tipo2.type = 'password' : tipo2.type = 'text';
+        tipo2.focus()
+        document.getElementById('confirm').style.display = 'none';
+        document.getElementById('pass2').style.display = 'inline-block';
     }
 })
 

@@ -21,23 +21,23 @@
     </div>
     <main action="" method="">
         <h1>Bem Vindo!</h1>
-        <div class="social-media">
-            <a href="https://www.youtube.com/@SescemMinasGerais">
-                <img src="assets/youtube.webp" alt="Google">
-            </a>
-            <a href="https://www.instagram.com/sescmg/">
-                <img src="assets/instragram.webp" alt="Facebook">
-            </a>
-            <a href="https://www.linkedin.com/company/sesc-em-minas-gerais/mycompany/verification/">
-                <img src="assets/linkedin.png" alt="Linkedin">
-            </a>
+        <div class="btn_social">
+            <ul>
+                <li><a href="https://www.linkedin.com/company/sesc-em-minas-gerais/mycompany/verification/"
+                        target="_blank" title="facebook"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/sescmg/" target="_blank" title="instagram"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/@SescemMinasGerais" target="_blank" title="youtube"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+
+            </ul>
         </div>
 
         <div class="alternative">
             <span>ACESSE</span>
         </div>
 
-        <form name="nameForm">
+        <form name="nameForm" class="loginn">
             <label for="name & email">
                 <span>Login</span>
                 <input type="text" id="usuario" name="usuario" ng-model="usuario" ng-required="true"
@@ -51,7 +51,8 @@
             <label for="password">
                 <span>Senha</span>
                 <input type="password" id="senha" name="senha" ng-model="senha" ng-required="true" placeholder="Senha">
-                <i class="fa fa-eye" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true" id="pass"></i>
+                <i class="fa fa-eye-slash" id="pass2"></i>
                 <!-- <i class="fa fa-eye-slash" aria-hidden="true"></i> -->
             </label>
             <div ng-show="nameForm.senha.$error.required && nameForm.senha.$dirty"

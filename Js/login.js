@@ -1,10 +1,19 @@
-let btn = document.querySelector('.fa-eye');
-btn.addEventListener('click', () => {
-    let inputSenha = document.querySelector('#senha')
-    if (inputSenha.getAttribute('type') == 'password') {
-        inputSenha.setAttribute('type', 'text')
-    } else {
-        inputSenha.setAttribute('type', 'password')
+var tipo = document.getElementById('senha')
+document.getElementById('pass').addEventListener('click', () => {
+    if (tipo.value) {
+        tipo.type == 'password' ? tipo.type = 'text' : tipo.type = 'password';
+        tipo.focus()
+        document.getElementById('pass').style.display = 'none';
+        document.getElementById('pass2').style.display = 'inline-block';
+    }
+})
+
+document.getElementById('pass2').addEventListener('click', () => {
+    if (tipo.value) {
+        tipo.type == 'text' ? tipo.type = 'password' : tipo.type = 'text';
+        tipo.focus()
+        document.getElementById('pass2').style.display = 'none';
+        document.getElementById('pass').style.display = 'inline-block';
     }
 })
 
