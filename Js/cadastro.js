@@ -194,8 +194,7 @@ submit.addEventListener('click', function (e) {
     e.preventDefault();
 
     validar.validate(form);
-
-
+ 
 });
 
 var tipo = document.getElementById('password')
@@ -304,3 +303,4 @@ function date(inputData, e) {
         return false;
 
 }
+

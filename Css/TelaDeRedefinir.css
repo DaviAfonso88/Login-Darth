@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
     margin: 0;
@@ -431,9 +431,9 @@ form input[type="submit"]:hover {
         font-weight: 500;
     }
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         top: 20px;
-        left: 118px;
+        left: 265px;
     }
 
     .error-validation {
@@ -468,7 +468,7 @@ form input[type="submit"]:hover {
         margin-left: 120px;
     }
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         top: 20px;
         left: 262px;
     }
@@ -478,7 +478,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 713px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm{
         left: 255px;
     }
 
@@ -487,7 +487,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 704px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 250px;
     }
 
@@ -497,49 +497,49 @@ form input[type="submit"]:hover {
 
 @media (max-width: 693px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 243px;
     }
 }
 
 @media (max-width: 682px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 236px;
     }
 }
 
 @media (max-width: 671px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 230px;
     }
 }
 
 @media (max-width: 661px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 224px;
     }
 }
 
 @media (max-width: 651px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 218px;
     }
 }
 
 @media (max-width: 641px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 210px;
     }
 }
 
 @media (max-width: 630px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 205px;
 
     }
@@ -547,7 +547,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 620px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 195px;
 
     }
@@ -556,7 +556,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 607px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 190px;
 
     }
@@ -564,7 +564,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 598px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 185px;
 
     }
@@ -572,7 +572,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 588px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 178px;
 
     }
@@ -580,7 +580,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 578px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 172px;
 
     }
@@ -588,7 +588,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 568px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 165px;
 
     }
@@ -596,7 +596,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 558px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 160px;
 
     }
@@ -604,7 +604,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 548px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 155px;
 
     }
@@ -612,7 +612,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 542px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 150px;
 
     }
@@ -620,7 +620,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 531px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 145px;
 
     }
@@ -628,7 +628,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 524px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 140px;
 
     }
@@ -636,7 +636,7 @@ form input[type="submit"]:hover {
 
 @media (max-width: 516px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 135px;
 
     }
@@ -644,13 +644,13 @@ form input[type="submit"]:hover {
 
 @media (max-width: 510px) {
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 130px;
 
     }
 }
 
-@media (min-width: 300px) and (max-width: 360px) {
+@media (min-width: 300px) and (max-width: 490px) {
 
     .linkseta,
     h1 {
@@ -659,7 +659,7 @@ form input[type="submit"]:hover {
 
     .dois,
     .tres {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     form input[type="submit"] {
@@ -668,7 +668,7 @@ form input[type="submit"]:hover {
         width: 40%;
     }
 
-    .fa-eye {
+    #pass, #pass2, #exibir, #confirm {
         left: 115px;
     }
 
