@@ -21,9 +21,9 @@ body {
 
 .Alterar {
     background-color: rgba(0, 0, 0, .5);
-    box-shadow: 0px 10px 40px -12px #000000;
-    border-radius: 20px;
-    width: 400px;
+    box-shadow: 0.5rem 0.5rem 0.6rem #F6BE00;
+    border-radius: 1rem;
+    width: 550px;
     padding: 40px;
 }
 
@@ -74,7 +74,7 @@ body {
 .inputUser:valid~#labelInput {
     top: -20px;
     left: 0;
-    color: #0775e2;
+    color: #F6BE00;
     font-size: 13px;
 
 }
@@ -105,6 +105,8 @@ body {
     letter-spacing: 4px;
     font-weight: 700;
     margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 45px;
     transition: .5s;
     overflow: hidden;
     size: 50%;
@@ -113,9 +115,9 @@ body {
 }
 
 .btn1:hover {
-    background: #fff;
+    background: #F6BE00;
     border-radius: 5px;
-    color: #18d112;
+    color: #ffffff;
 
 }
 
@@ -129,7 +131,7 @@ body {
     left: -100%;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, transparent, #fff);
+    background: linear-gradient(90deg, transparent, #F6BE00);
     animation: btnv 1s linear infinite;
 }
 
@@ -149,7 +151,7 @@ body {
     right: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(100deg, transparent, #fff);
+    background: linear-gradient(100deg, transparent, #F6BE00);
     animation: btnv2 1s linear infinite;
     animation-delay: .20s;
 }
@@ -170,7 +172,7 @@ body {
     right: -100%;
     width: 100%;
     height: 4px;
-    background: linear-gradient(270deg, transparent, #fff);
+    background: linear-gradient(270deg, transparent, #F6BE00);
     animation: btnv3 1s linear infinite;
     animation-delay: .45s;
 }
@@ -191,7 +193,7 @@ body {
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(26deg, transparent, #fff);
+    background: linear-gradient(26deg, transparent, #F6BE00);
     animation: btnv4 1s linear infinite;
     animation-delay: .70s;
 }
@@ -225,9 +227,9 @@ body {
 }
 
 .btn2:hover {
-    background: #fff;
+    background: #F6BE00;
     border-radius: 5px;
-    color: #ff0808;
+
 }
 
 .btn2 span {
@@ -240,7 +242,7 @@ body {
     left: -100%;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, transparent, #fff);
+    background: linear-gradient(90deg, transparent, #F6BE00);
     animation: btnd 1s linear infinite;
 }
 
@@ -260,7 +262,7 @@ body {
     right: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(100deg, transparent, #fff);
+    background: linear-gradient(100deg, transparent, #F6BE00);
     animation: btnd2 1s linear infinite;
     animation-delay: .20s;
 }
@@ -281,7 +283,7 @@ body {
     right: -100%;
     width: 100%;
     height: 4px;
-    background: linear-gradient(270deg, transparent, #fff);
+    background: linear-gradient(270deg, transparent, #F6BE00);
     animation: btnd3 1s linear infinite;
     animation-delay: .45s;
 }
@@ -302,7 +304,7 @@ body {
     left: 0;
     width: 4px;
     height: 100%;
-    background: linear-gradient(26deg, transparent, #fff);
+    background: linear-gradient(26deg, transparent, #F6BE00);
     animation: btnd4 1s linear infinite;
     animation-delay: .70s;
 }
@@ -320,7 +322,7 @@ body {
 
 
 
-@media (max-width: 450px) {
+@media (max-width: 560px) {
     .Alterar {
         width: 90%;
     }
@@ -381,7 +383,20 @@ body {
     }
 }
 
-@media (max-width: 430px) and (min-width:286px) {
+@media (max-width: 493px) and (min-width: 430px) {
+    .btn2 {
+        margin-right: -20px;
+
+    }
+
+    .btn1 {
+        padding: 12px 10px;
+        margin-right: 200px;
+    }
+
+}
+
+@media (max-width: 429px) and (min-width:286px) {
     .btn1 {
         padding: 12px 1px;
         font-size: 9px;
@@ -413,7 +428,7 @@ body {
 
 }
 
-@media (max-width: 360px) and (min-width:340px) {
+@media (max-width: 365px) and (min-width:340px) {
     .btn1 {
         margin-left: -10px;
 
@@ -474,13 +489,14 @@ body {
 
 }
 
-@media (max-width: 442px) and (min-width:406px) {
+@media (max-width: 593px) and (min-width:406px) {
     .btn1 {
-        padding: 12px 12px;
+        margin-left: 40px;
+        margin-right: 5px;
     }
 
-    .btn2 {
-        padding: 12px 12px;
+    .Alterar {
+        width: 90%;
     }
 }
 

@@ -70,7 +70,7 @@ main h1::before {
 
 .btn_social ul li {
     position: relative;
-    background: #555555;
+    background: #707070;
     list-style: none;
     float: left;
     margin: 10px;
@@ -111,7 +111,7 @@ main h1::before {
 }
 
 .btn_social ul li a:hover {
-    color: #555555;
+    color: #707070;
 }
 
 
@@ -180,7 +180,7 @@ main form input {
     border: 1px solid #044381;
     border-radius: 8px;
     top: 200px;
-    
+
 }
 
 main form input:hover {
@@ -223,8 +223,9 @@ section.images img {
 .logo {
     height: 45px;
     width: 167px;
-    margin-top: 4px;
-    padding: 20px 50px;
+    margin-top: -150px;
+    margin-left: -80px;
+    margin-right: 60px;
     z-index: 10;
     position: relative;
 }
@@ -346,6 +347,13 @@ section.images .circle {
     }
 }
 
+@media (max-width: 1174px) {
+    .logo {
+        display: none;
+        visibility: hidden;
+    }
+}
+
 @media only screen and (max-width: 975px) {
     section.images {
         display: none;
@@ -354,11 +362,6 @@ section.images .circle {
 
     main {
         width: 100vw;
-    }
-
-    .logo {
-        display: none;
-        visibility: hidden;
     }
 
     main h1::before {

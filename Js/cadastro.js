@@ -194,8 +194,27 @@ submit.addEventListener('click', function (e) {
     e.preventDefault();
 
     validar.validate(form);
- 
+
 });
+
+
+var btnColor = document.querySelector('.btnColor')
+
+let signin = document.querySelector('#btnSignin')
+    .addEventListener('click', () => {
+        btnColor.style.left = "0px";
+        btnColor.style.width = "108px";
+
+    })
+
+let Signup = document.querySelector('#btnSignup')
+    .addEventListener('click', () => {
+        btnColor.style.left = "120px";
+        btnColor.style.width = "120px";
+        window.location.href = "http://localhost/Login-Sesc/info.html";
+
+
+    })
 
 var tipo = document.getElementById('password')
 document.getElementById('pass').addEventListener('click', () => {

@@ -15,8 +15,8 @@
     height: 50px;
     margin-left: -520px;
     margin-top: -200px;
-    background-color: #15c5fad0;
-    border: 2px solid #15c5fad0;
+    background-color: #f6bd00c7;
+    border: 2px solid #f6bd00c7;
     animation: bounce 20s infinite alternate;
     -webkit-animation: bounce 1s infinite alternate;
 }
@@ -48,8 +48,8 @@
     height: 50px;
     margin-left: -520px;
     margin-top: -400px;
-    background-color: #15c5fad0;
-    border: 2px solid #15c5fad0;
+    background-color: #f6bd00c7;
+    border: 2px solid #f6bd00c7;
     animation: bounce2 20s infinite alternate;
     -webkit-animation: bounce2 1s infinite alternate;
 }
@@ -145,7 +145,7 @@ h1 {
     margin-top: 5px;
     margin-left: -70px;
     font-size: 17px;
-    color: #15c5fad0;
+    color: #f6bd00e1;
 }
 
 .tres {
@@ -224,7 +224,7 @@ body {
     right: -100%;
     width: 100%;
     height: 4px;
-    background: linear-gradient(1deg, transparent, #15c5fad0);
+    background: linear-gradient(1deg, transparent, #F6BE00);
     animation: btnv3 5s linear infinite;
     animation-delay: .90s;
 }
@@ -264,7 +264,7 @@ body {
 
 .novasenha:hover,
 #confirmarsenha:hover {
-    border-color: #15c5fad0;
+    border-color: #f6bd00e1;
 
 }
 
@@ -297,7 +297,7 @@ label {
 .novasenha:valid~.nova {
     top: -15px;
     left: -30px;
-    color: #15c5fad0;
+    color: #f6bd00e1;
     font-size: 13px;
 
 }
@@ -306,10 +306,18 @@ label {
 #confirmarsenha:valid~.confirmar {
     top: -15px;
     left: -30px;
-    color: #15c5fad0;
+    color: #f6bd00e1;
     font-size: 13px;
 
 
+}
+
+#confirmarsenha:focus {
+    border-color: #f6bd00e1;
+}
+
+#senha:focus {
+    border-color: #f6bd00e1;
 }
 
 form input[type="submit"] {
@@ -320,7 +328,7 @@ form input[type="submit"] {
     margin-left: 180px;
     border: none;
     border-radius: 5px;
-    background: #15c5fad0;
+    background: #f6bd00e1;
     color: #fff;
     font-size: 15px;
     transition: all 0.3s ease;
@@ -335,7 +343,7 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     cursor: pointer;
-    background: #1289add8;
+    background: #a88614;
     box-shadow: 0px 10px 40px -12px #000000;
 }
 
@@ -431,7 +439,10 @@ form input[type="submit"]:hover {
         font-weight: 500;
     }
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         top: 20px;
         left: 265px;
     }
@@ -468,7 +479,10 @@ form input[type="submit"]:hover {
         margin-left: 120px;
     }
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         top: 20px;
         left: 262px;
     }
@@ -478,7 +492,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 713px) {
 
-    #pass, #pass2, #exibir, #confirm{
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 255px;
     }
 
@@ -487,7 +504,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 704px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 250px;
     }
 
@@ -497,49 +517,70 @@ form input[type="submit"]:hover {
 
 @media (max-width: 693px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 243px;
     }
 }
 
 @media (max-width: 682px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 236px;
     }
 }
 
 @media (max-width: 671px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 230px;
     }
 }
 
 @media (max-width: 661px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 224px;
     }
 }
 
 @media (max-width: 651px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 218px;
     }
 }
 
 @media (max-width: 641px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 210px;
     }
 }
 
 @media (max-width: 630px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 205px;
 
     }
@@ -547,7 +588,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 620px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 195px;
 
     }
@@ -556,7 +600,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 607px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 190px;
 
     }
@@ -564,7 +611,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 598px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 185px;
 
     }
@@ -572,7 +622,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 588px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 178px;
 
     }
@@ -580,7 +633,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 578px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 172px;
 
     }
@@ -588,7 +644,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 568px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 165px;
 
     }
@@ -596,7 +655,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 558px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 160px;
 
     }
@@ -604,7 +666,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 548px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 155px;
 
     }
@@ -612,7 +677,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 542px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 150px;
 
     }
@@ -620,7 +688,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 531px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 145px;
 
     }
@@ -628,7 +699,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 524px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 140px;
 
     }
@@ -636,7 +710,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 516px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 135px;
 
     }
@@ -644,7 +721,10 @@ form input[type="submit"]:hover {
 
 @media (max-width: 510px) {
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 130px;
 
     }
@@ -668,7 +748,10 @@ form input[type="submit"]:hover {
         width: 40%;
     }
 
-    #pass, #pass2, #exibir, #confirm {
+    #pass,
+    #pass2,
+    #exibir,
+    #confirm {
         left: 115px;
     }
 

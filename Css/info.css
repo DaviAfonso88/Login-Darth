@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    color: #323232;
+    border: none;
+}
+
+body {
+    padding-top: 10vh;
+    background: linear-gradient(#004C99, #03315f);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#container {
+    width: 560px;
+    height: 512px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d1d1d1;
+    padding: 25px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 400px;
+    margin-top: 100px;
+    box-shadow: 0.5rem 0.5rem 0.6rem #F6BE00;
+    font-family: "Poppins";
+
+}
+
+#container2 {
+    width: 560px;
+    height: 512px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    padding: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 960px;
+    margin-top: 100px;
+    box-shadow: 0.5rem 0.5rem 0.6rem #F6BE00;
+
+
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border: 3px solid #494949;
+    border-radius: 20px;
+    font: bold 2.5rem serif;
+    margin-bottom: 20px;
+    background-color: #FDE596;
+    color: #494949;
+    font-family: Poppins;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#ap {
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+
+}
+
+
+
+.logo {
+    position: absolute;
+    margin-top: -90px;
+    padding: 20px 50px;
+    z-index: 0;
+}
+
+.buttonsForm {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 30px;
+    width: 240px;
+    box-shadow: 0 0 7px 0 #F6BE00;
+    background-color: white;
+    margin-bottom: 80px;
+
+}
+
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 9px 20px;
+
+}
+
+.btnColor {
+    position: absolute;
+    margin-left: 120px;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(to right, #004C99, #F6BE00);
+    border-radius: 30px;
+    transition: all 0.7s ease;
+}
+
+#um,
+#dois,
+#tres {
+    width: 85%;
+    margin-left: 50px;
+    margin-bottom: 40px;
+    color: #050505;
+}
+
+@media (max-width: 1542px) {
+    #container {
+        position: relative;
+        margin-top: -20px;
+    }
+
+    #container2 {
+        margin-top: 0px;
+        margin-left: 400px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 500px) {
+    #container {
+        width: 40%;
+        margin-left: 280px;
+    }
+
+    #container2 {
+        width: 40%;
+        margin-left: 280px;
+    }
+}
+
+@media (max-width: 823px) {
+
+    .buttonsForm {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 660px) {
+    #container {
+        width: 40%;
+        margin-left: 200px;
+    }
+
+    #container2 {
+        width: 40%;
+        margin-left: 200px;
+    }
+
+    #um,
+    #dois,
+    #tres {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+
+}

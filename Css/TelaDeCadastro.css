@@ -19,6 +19,23 @@ body {
     min-width: 100vw;
 }
 
+#container {
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 10px 40px -12px #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+
+}
+
 .logo {
     position: absolute;
     margin-top: -90px;
@@ -36,8 +53,7 @@ body {
     border: none;
     height: 40px;
     overflow: hidden;
-
-
+    margin-top: 85px;
 }
 
 .linha span {
@@ -66,16 +82,6 @@ body {
     }
 }
 
-#container {
-    width: 560px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #FFF;
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: 0px 10px 40px -12px #000000;
-}
-
 h1 {
     text-align: center;
     text-transform: uppercase;
@@ -88,6 +94,31 @@ h1 {
     margin-top: -5px;
 }
 
+.buttonsForm {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 30px;
+    width: 240px;
+    box-shadow: 0 0 7px 0 #F6BE00;
+}
+
+.buttonsForm button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 9px 20px;
+}
+
+.btnColor {
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: linear-gradient(to right, #004C99, #F6BE00);
+    border-radius: 30px;
+    transition: all 0.7s ease;
+}
 
 .check {
     margin-top: 10px;
@@ -300,6 +331,11 @@ section.images img {
     width: 100%;
 }
 
+#logo {
+    margin-top: -120px;
+    margin-left: -90px;
+}
+
 section.images .circle {
     position: absolute;
     height: 100%;
@@ -317,7 +353,7 @@ section.images .circle {
     }
 }
 
-@media (max-width: 1105px) {
+@media (max-width: 1290px) {
     .logo {
         display: none;
     }
@@ -339,14 +375,10 @@ section.images .circle {
         margin-left: 35px;
     }
 
-    h1 {
-        font-size: 20px;
-    }
-
     .fa-eye {
         position: absolute;
         top: 30px;
-        left: 195px;
+        left: -145px;
         cursor: pointer;
 
     }
@@ -412,7 +444,7 @@ section.images .circle {
     }
 }
 
-@media(max-width: 539px) and (min-width: 420px) {
+@media(max-width: 630px) and (min-width: 420px) {
     #container {
         width: 75%;
     }
@@ -437,6 +469,14 @@ section.images .circle {
         margin-right: 200px;
 
     }
+
+    #btn1,
+    #btn2,
+    #pass,
+    #pass2 {
+        left: 310px;
+    }
+
 }
 
 @media(max-width: 393px) {
@@ -504,7 +544,7 @@ section.images .circle {
     }
 }
 
-@media(min-width: 540px) and (max-width: 700px) {
+@media(min-width: 540px) and (max-width: 691px) {
 
     .btn1 {
         margin-left: 58px;
@@ -527,12 +567,28 @@ section.images .circle {
     }
 }
 
-@media(min-width: 631px) and (max-width: 700px) {
+@media(min-width: 655px) and (max-width: 698px) {
 
-    .fa-eye {
-        left: 175px;
+    #btn1,
+    #btn2,
+    #pass,
+    #pass2 {
+        left: 190px;
     }
 }
+
+@media(max-width: 504px) and (min-width: 427px) {
+
+    #btn1,
+    #btn2,
+    #pass,
+    #pass2 {
+        left: 250px;
+    }
+}
+
+
+
 
 @media(min-width: 418px) and (max-width: 538px) {
 
@@ -595,5 +651,14 @@ section.images .circle {
     .error-validation {
         top: 25px;
         font-size: 19px;
+
     }
+
+    #btn1,
+    #btn2,
+    #pass,
+    #pass2 {
+        left: 310px;
+    }
+
 }

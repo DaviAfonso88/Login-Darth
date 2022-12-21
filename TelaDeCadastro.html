@@ -16,7 +16,7 @@
 
 <body ng-controller="TelaDeCadastroCtrl">
   <div class="logo">
-    <img src="assets/logo.png" alt="logo">
+    <img src="assets/logo-darth.png" alt="logo" id="logo">
   </div>
   <div class="">
     <a href="#" class="linha">
@@ -24,7 +24,11 @@
     </a>
   </div>
   <div id="container">
-    <h1>Cadastre-se</h1>
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin">Cadastrar</button>
+      <button id="btnSignup">Nos conheça</button>
+    </div>
     <form action="" method="" id="registro" action="">
       <div class="full-box">
         <label for="name" id="label1">Nome</label>
@@ -77,7 +81,7 @@
         </a>
       </div>
       <div class="retorno">
-        <label for="termos" id="termos-label">Já é usuário?<a href="TelaDeLogin.html"> Acesse sua conta</a></label><br>
+        <label for="termos" id="termos-label">Já é usuário?<a href="TelaDeLogin.html"> Acesse sua conta</a></label>
       </div>
     </form>
   </div>
