@@ -30,7 +30,7 @@ entrar.addEventListener('click', () => {
         alert("senha não informada")
     }
     else if (usuario.value == "") {
-        alert("usúario não informado")
+        alert("login não informado")
     }
     else {
         window.location.href = "http://localhost/Login-Sesc/Logado.html";

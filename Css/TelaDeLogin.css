@@ -347,7 +347,7 @@ section.images .circle {
     }
 }
 
-@media (max-width: 1174px) {
+@media (max-width: 1270px) {
     .logo {
         display: none;
         visibility: hidden;

@@ -33,14 +33,16 @@ class Validar {
         }
     }
     emailvalidate(input) {
-        let regular = /\S+@\S+\.\S+/;
-
+        let regular = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
         let CadastrarEmail = input.value;
-        let errorMessage = `Insira um e-mail no padrão XXXX@gmail.com`;
+        let errorMessage = `Insira um e-mail no padrão XXXX@gmail.com.br`;
 
         if (!regular.test(CadastrarEmail)) {
             this.printMessage(input, errorMessage);
+
+
         }
+
     }
 
     printMessage(input, msg) {
@@ -75,14 +77,11 @@ submit.addEventListener('click', function (e) {
 
 });
 
-// let btn = document.querySelector('#enviar');
-// btn.addEventListener('click', () => {
-//     window.location.href = "http://localhost/Login-Sesc/TelaDeRedefinir.html";
-
-
-// })
-let entrar = document.querySelector('#enviar');
-entrar.addEventListener('click', () => {
+let btn = document.querySelector('#enviar');
+btn.addEventListener('click', () => {
     window.location.href = "http://localhost/Login-Sesc/TelaDeRedefinir.html";
 
+
 })
+
+
