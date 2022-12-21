@@ -211,7 +211,7 @@ let Signup = document.querySelector('#btnSignup')
     .addEventListener('click', () => {
         btnColor.style.left = "120px";
         btnColor.style.width = "120px";
-        window.location.href = "http://localhost/Login-Sesc/info.html";
+        window.location.href = "http://localhost/Login-Darth/info.html";
 
 
     })
